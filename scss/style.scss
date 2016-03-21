@@ -1,0 +1,314 @@
+/*
+ * Vars
+ */
+$main-color: darken(#CBCFD9, 20%);
+
+$socials: (
+  none: #ffffff, 
+  dribbble: #55acee,
+  behance: #1769ff,
+  linkedin: #0077b5,
+  twitter: #55acee,
+  instagram: #3f729b,
+  vimeo: #1ab7ea
+);
+
+$font-base: 16px;
+$social-icon-base: 40px;
+
+$tabs-transition-timing: 1.2s;
+
+/*
+ * Mixins
+ */
+@mixin display-flex {
+  display: flex;
+}
+
+@mixin flex($grow: 1, $shrink: 1, $basis: auto) {
+  flex: $grow $shrink $basis;
+}
+
+@mixin flex-direction-column {
+  flex-direction: column;
+}
+
+@mixin justify-center {
+  justify-content: center;
+}
+
+@mixin justify-space-between {
+  justify-content: space-between;
+}
+
+@mixin align-center {
+  align-items: center;
+}
+
+@mixin center {
+  @include display-flex;
+  @include justify-center;
+  @include align-center;
+}
+
+@mixin above-all {
+  position: relative;
+  z-index: 20;
+}
+
+@mixin fade {
+  transition-property: opacity;
+}
+
+/*
+ * Main and utils
+ */
+body {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: $font-base;
+  @include center;
+  color: $main-color;
+  background-color: #f9f9f9;
+  height: 100vh;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/*
+ * Card
+ */
+#card {
+  @include display-flex;
+  @include flex-direction-column;
+  @include justify-space-between;
+  position: relative;
+  background-color: #fff;
+  height: 360px;
+  width: 600px;
+  box-shadow: 0 12px 38px rgba(black, 0.4);
+  overflow: hidden;
+  
+  &.white {
+    color: white;
+    
+    #top-bar__back-btn {
+      opacity: 1;
+      cursor: pointer;
+    }
+    
+    #top-bar__lang-selector {
+      
+      a {
+        color: white;
+        border-color: white;
+        
+        &.active {
+          color: $main-color;
+          background-color: white;
+        }
+      }
+    }
+    
+    #card__buttons {
+        
+      a[data-social] {
+        color: white;
+        
+        &:not(.active):hover {
+          color: white;
+          border-color: white
+        }
+      }
+    }
+  }
+  
+  #top-bar__back-btn {
+    @include fade;
+    opacity: 0;
+    transition-duration: .35s;
+    cursor: inherit;
+  }
+  
+  #card__buttons {
+    padding: 0 15px;
+
+    a {
+      color: $main-color;
+      border: 2px solid transparent;
+      border-radius: 100px;
+      width: $social-icon-base;
+      height: $social-icon-base;
+      line-height: $social-icon-base - 2px;
+      text-align: center;
+      padding: 0;
+      margin: 0 5px;
+      transition: all 0.4s linear;
+      position: relative;
+      z-index: 8;
+
+      @each $name, $social in $socials {
+        &[data-social=#{$name}] {
+          &.active, 
+          &:hover {
+            color: map-get($socials, $name);
+            border-color: map-get($socials, $name);
+          }
+        }
+      }
+
+      &.active {
+        background-color: white;
+      }
+    }
+  }
+}
+
+#card__top-bar {
+  @include display-flex;
+  @include justify-space-between;
+  @include above-all;
+  padding: 15px;
+}
+
+#top-bar__lang-selector, 
+#top-bar__close-btn{
+  margin-left: auto;
+}
+
+#top-bar__lang-selector {
+  
+  a {
+    color: $main-color;
+    display: inline-block;
+    text-align: center;
+    font-size: 80%;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    padding: 0;
+    margin: 0 5px;
+    border: 1px solid $main-color;
+    border-radius: 100px;
+    
+    &.active {
+      color: #fff;
+      background-color: $main-color;
+    }
+  }
+}
+
+#top-bar__close-btn, 
+#top-bar__back-btn{
+  cursor: pointer;
+}
+
+#card__tabs {
+  @include flex(0, 0, 190px);
+  @include above-all;
+  position: relative;
+}
+
+.single-tab {
+  transition: opacity $tabs-transition-timing;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  right: 20px;
+  opacity: 0;
+  
+  &:not(:first-child) {
+    color: #fff
+  }
+  
+  &.active {
+    z-index: 10;
+    opacity: 1;
+    
+    .singe-tab__image {
+      transform: translateX(-400px);
+      transition: all 0.4s cubic-bezier(.2,.97,.39,1) .7s;
+    }
+  }
+}
+
+.single-tab__header {
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+  
+  .my {
+    display: block;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+}
+
+.single-tab__content {
+  font-size: 0.7rem;
+  width: 60%;
+  
+  .button {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    margin-bottom: 0;
+    border-color: white;
+    color: white;
+    
+    &:hover {
+      color: $main-color;
+      background-color: white;
+      border-color: white
+    }
+  }
+}
+
+.singe-tab__image {
+  transform: translateX(0);
+  transition: all 0.1s;
+  margin: 0;
+  position: absolute;
+  right: -400px;
+  top: 20px;
+}
+
+#card__credits {
+  @include above-all;
+  padding: 15px;
+  font-size: 80%;
+}
+
+.circle-overlay {
+  display: block;
+  position: absolute;
+  animation-name: expandCircleOverlay;
+  transform: scale(1);
+  animation-duration: 1s;
+  z-index: 5;
+  width: 1500px;
+  height: 1500px;
+  border-radius: 1500px;
+  
+  @each $name, $social in $socials {
+    &.overlay-#{$name} {
+      background-color: $social;
+    }
+  }  
+}
+
+@keyframes expandCircleOverlay {
+  
+  0% {
+    transform: scale(0)
+  }
+  
+  100% {
+    transform: scale(1)
+  }
+  
+}
