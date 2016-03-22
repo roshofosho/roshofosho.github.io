@@ -1,0 +1,64 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M42.047 1013.829h131.546v-408.577h254.954c140.587 0 237.776-29.592 291.57-88.776s80.69-131.507 80.69-216.971c0-49.816-10.058-95.517-30.174-137.106s-46.674-73.923-79.673-97.003c-33-23.080-73.909-38.733-122.731-46.959-34.808-6.398-85.21-9.597-151.21-9.597h-374.973v1004.99zM173.593 127.436h254.276c59.67 0 100.58 2.971 122.731 8.912 34.356 9.597 62.043 29.363 83.064 59.299s31.53 65.925 31.53 107.971c0 58.042-17.856 103.058-53.568 135.050s-96.060 47.987-181.045 47.987l-388.534-0.071v-359.141h131.546z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"width": 834,
+				"grid": 0,
+				"tags": [
+					"pelotonpbig"
+				]
+			},
+			"attrs": [],
+			"properties": {
+				"order": 6,
+				"id": 3,
+				"prevSize": 32,
+				"code": 59648,
+				"name": "pelotonpbig"
+			},
+			"setIdx": 0,
+			"setId": 3,
+			"iconIdx": 0
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"showQuickUse2": true,
+		"showSVGs": true,
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon"
+			},
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"embed": false
+		},
+		"imagePref": {
+			"prefix": "icon-",
+			"png": true,
+			"useClassSelector": true,
+			"color": 0,
+			"bgColor": 16777215,
+			"classSelector": ".icon"
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"gridSize": 16,
+		"showGrid": false
+	}
+}

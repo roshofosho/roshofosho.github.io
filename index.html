@@ -2,7 +2,7 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>Can you code this UI? -Personal Social card</title>
+    <title>Roshan Selladurai</title>
     
     
     <link rel="stylesheet" href="css/normalize.css">
@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #9099ae;
+  color: white;
   background-color: #f9f9f9;
   height: 100vh;
 }
@@ -45,14 +45,15 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  background-color: #fff;
+  background-color: #3498db  !important;
+  background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0) !important;
   height: 95%;
   width: 95%;
   box-shadow: 0 12px 38px rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
 #card.white {
-  color: white;
+  color: #3498db;
 }
 #card.white #top-bar__back-btn {
   opacity: 1;
@@ -63,7 +64,7 @@ body {
   border-color: white;
 }
 #card.white #top-bar__lang-selector a.active {
-  color: #9099ae;
+  color: white;
   background-color: white;
 }
 #card.white #card__buttons a[data-social] {
@@ -80,10 +81,10 @@ body {
   cursor: inherit;
 }
 #card #card__buttons {
-  padding: 0 15px;
+  padding: 0 15px; 
 }
 #card #card__buttons a {
-  color: #9099ae;
+  color: white ;
   border: 2px solid transparent;
   border-radius: 100px;
   width: 40px;
@@ -92,7 +93,7 @@ body {
   text-align: center;
   padding: 0;
   margin: 0 5px;
-  transition: all 0.4s linear;
+    transition: all 0.4s linear; 
   position: relative;
   z-index: 8;
 }
@@ -105,12 +106,12 @@ body {
   border-color: #ea4c89;
 }
 #card #card__buttons a[data-social=behance].active, #card #card__buttons a[data-social=behance]:hover {
-  color: #1769ff;
-  border-color: #1769ff;
+  color: #81CFE0;
+  border-color: #81CFE0;
 }
 #card #card__buttons a[data-social=linkedin].active, #card #card__buttons a[data-social=linkedin]:hover {
-  color: #0077b5;
-  border-color: #0077b5;
+  color: #F9690E;
+  border-color: #F9690E;
 }
 #card #card__buttons a[data-social=twitter].active, #card #card__buttons a[data-social=twitter]:hover {
   color: #55acee;
@@ -142,7 +143,7 @@ body {
 }
 
 #top-bar__lang-selector a {
-  color: #9099ae;
+  color: white;
   display: inline-block;
   text-align: center;
   font-size: 80%;
@@ -151,12 +152,12 @@ body {
   line-height: 32px;
   padding: 0;
   margin: 0 5px;
-  border: 1px solid #9099ae;
+  border: 1px solid white;
   border-radius: 100px;
 }
 #top-bar__lang-selector a.active {
   color: #fff;
-  background-color: #9099ae;
+  background-color: white;
 }
 
 #top-bar__close-btn,
@@ -201,13 +202,13 @@ body {
   margin-bottom: 10px;
 }
 .single-tab__header .my {
-  display: block;
+  display: flex;
   font-weight: 700;
   text-transform: capitalize;
 }
 
 .single-tab__content {
-  font-size: 0.7rem;
+  font-size: 1.0rem;
   width: 60%;
 }
 .single-tab__content .button {
@@ -218,13 +219,15 @@ body {
   color: white;
 }
 .single-tab__content .button:hover {
-  color: #9099ae;
+  color: white ;
   background-color: white;
   border-color: white;
 }
 
 .singe-tab__image {
   transform: translateX(0);
+ max-height: 100px !important; 
+    max-width: 250px !important;
   transition: all 0.1s;
   margin: 0;
   position: absolute;
@@ -239,28 +242,31 @@ body {
   font-size: 80%;
 }
 
+#card__credits a { color: white !important;}
+
 .circle-overlay {
   display: block;
   position: absolute;
   animation-name: expandCircleOverlay;
   transform: scale(1);
-  animation-duration: 1s;
+  animation-duration: 2s;
   z-index: 5;
   width: 1500px;
   height: 1500px;
-  border-radius: 1500px;
+  border-radius: 3000px;
 }
 .circle-overlay.overlay-none {
-  background-color: #ffffff;
+  background-color: #3498db;
 }
 .circle-overlay.overlay-dribbble {
   background-color: #ea4c89;
 }
 .circle-overlay.overlay-behance {
-  background-color: #1769ff;
+  background-color: #81CFE0;
+  background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0) !important;
 }
 .circle-overlay.overlay-linkedin {
-  background-color: #0077b5;
+  background-color: #F9690E;
 }
 .circle-overlay.overlay-twitter {
   background-color: #55acee;
@@ -295,30 +301,25 @@ body {
   <div id="card__top-bar">
     <i id="top-bar__back-btn" class="fa fa-long-arrow-left fa-lg" data-social="none"></i>
     <div id="top-bar__lang-selector" class="menu">
-      <li>
-        <a href="#" class="active">En</a>
-      </li>
-      <li>
-        <a href="#">Fr</a>
-      </li>
-    </div>
-    <i id="top-bar__close-btn" class="fa fa-times fa-lg"></i>
+   
+      </div>
   </div>
   
   <div id="card__tabs">
     <div id="tabs__tab-main" class="single-tab active" data-tab-name="main">
       <div class="single-tab__header">
-        <span class="my">Hello</span>
-        World.
+          <div><br></div>
+          <div><br></div>
+        <span class="my">Roshan Selladurai</span>
       </div>
       <div class="single-tab__content">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere cum sit aut quos quia temporibus officia veniam, ducimus esse non.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, obcaecati.
+          Roshan is an Indiana Hoosier with a background in consulting and finance. He is currently working as an equity analyst at Peloton, covering consumer and technology markets. He is also a growth marketer at New Story Charity, a non-profit startup backed by Y Combinator.
+Roshan's passion is driven by his belief that it only takes a few people to make a big dent in the world. 
         </p>
       </div>
       <figure class="singe-tab__image">
-        <img src="http://placekitten.com/200/140" alt="" />
+        <img src="https://dl.dropboxusercontent.com/s/bcwgfg6rraq1beo/roshanpicture%20for%20site.jpeg?dl=0" alt="" />
       </figure>
     </div>
     <div id="tabs__tab-dribbble" class="single-tab" data-tab-name="dribbble">
@@ -333,34 +334,40 @@ body {
         <a href="#" class="button hollow">Read More</a>
       </div>
       <figure class="singe-tab__image">
-        <img src="http://placekitten.com/180/160" alt="" />
+        <img src="" alt="" />
       </figure>
     </div>
     <div id="tabs__tab-behance" class="single-tab" data-tab-name="behance">
       <div class="single-tab__header">
-        <span class="my">My</span>
-        Behance.
+        <div><br></div>
+           <div><br></div>
+       <span class="my">New Story Charity</span>
+       Growth Marketer
       </div>
       <div class="single-tab__content">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere cum sit aut quos quia temporibus officia veniam, ducimus esse non.
+          Connecting donors to homeless families in danger to create life changing stories.
         </p>
-        <a href="#" class="button hollow">Read More</a>
+          <p>
+          Backed by Y Combinator</p>
+        <a href="http://www.newstorycharity.com/" target="_blank" class="button hollow">Read More</a>
       </div>
       <figure class="singe-tab__image">
-        <img src="http://placekitten.com/210/150" alt="" />
+        <img src="" alt="" />
       </figure>
     </div>
     <div id="tabs__tab-linkedin" class="single-tab" data-tab-name="linkedin">
       <div class="single-tab__header">
-        <span class="my">My</span>
-        LinkedIn.
+          <div><br></div>
+           <div><br></div>
+        <span class="my">Peloton Wealth Strategists</span>
+          Equity Analyst
       </div>
       <div class="single-tab__content">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere cum sit aut quos quia temporibus officia veniam, ducimus esse non.
+          Research and generate long ideas in Consumer and Tech sectors
         </p>
-        <a href="#" class="button hollow">Read More</a>
+        <a href="http://www.pelotonwealth.com/" target="_blank" class="button hollow">Read More</a>
       </div>
       <figure class="singe-tab__image">
         <img src="http://placekitten.com/200/160" alt="" />
@@ -416,10 +423,10 @@ body {
   <div id="card__buttons">
     <ul class="menu">
       <li>
-        <a href="#" data-social="dribbble" class="fa fa-dribbble fa-lg"></a>
+          <a href="#" data-social="linkedin" class="icon-pelotonpbig"></a>
       </li>
       <li>
-        <a href="#" data-social="behance" class="fa fa-behance fa-lg"></a>
+        <a href="#" data-social="behance" class="fa fa-home fa-lg"></a>
       </li>
       <li>
         <a href="#" data-social="linkedin" class="fa fa-linkedin fa-lg"></a>
@@ -437,7 +444,7 @@ body {
   </div>
   
   <div id="card__credits" class="text-right">
-    Contact me at <strong>john@doe.com</strong>
+    Contact me at <strong>roshan.selladurai@gmail.com</strong>
   </div>
   
 </div>
