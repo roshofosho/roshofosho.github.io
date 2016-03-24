@@ -22,6 +22,8 @@
 /*
  * Main and utils
  */
+
+            
 body {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 16px;
@@ -33,6 +35,7 @@ body {
   background-repeat:no-repeat;
    background-size:cover;
         height: 100vh;
+    width: 100% !important ;
 }
 
 .text-right {
@@ -47,34 +50,40 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  background-color: #3498db  !important;
+  background-color: #f9f9f9  !important;
   background-image: url(https://dl.dropboxusercontent.com/s/uqt33kxcinauuca/worn-dots.png?dl=0) !important;
   height:75% !important;
   width: 75%;
-  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 12px 38px rgba(44, 62, 80, 0.8);
   overflow: hidden;
 }
+            
+#card a { color: #2C3E50 !important; }
+
 #card.white {
-  color: #3498db;
+  color: #f9f9f9;
+}
+#card.white {
+  color: #2C3E50 !important; 
 }
 #card.white #top-bar__back-btn {
   opacity: 1;
   cursor: pointer;
 }
 #card.white #top-bar__lang-selector a {
-  color: white;
-  border-color: white;
+  color: #2C3E50;
+  border-color: #2C3E50;
 }
 #card.white #top-bar__lang-selector a.active {
   color: white;
   background-color: white;
 }
 #card.white #card__buttons a[data-social] {
-  color: white;
+  color: #2C3E50;
 }
 #card.white #card__buttons a[data-social]:not(.active):hover {
-  color: white;
-  border-color: white;
+  color: #2C3E50;
+  border-color: #2C3E50;
 }
 #card #top-bar__back-btn {
   transition-property: opacity;
@@ -100,21 +109,23 @@ body {
   z-index: 8;
 }
 #card #card__buttons a[data-social=none].active, #card #card__buttons a[data-social=none]:hover {
-  color: #ffffff;
-  border-color: #ffffff;
+  color: #2C3E50;
+  border-color: #2C3E50;
 }
 #card #card__buttons a[data-social=dribbble].active, #card #card__buttons a[data-social=dribbble]:hover {
   color: #ea4c89;
   border-color: #ea4c89;
 }
 #card #card__buttons a[data-social=behance].active, #card #card__buttons a[data-social=behance]:hover {
-  color: #81CFE0;
+  color: #81CFE0 !important;
   border-color: #81CFE0;
 }
 #card #card__buttons a[data-social=linkedin].active, #card #card__buttons a[data-social=linkedin]:hover {
-  color: #F9690E;
-  border-color: #F9690E;
+  color: #ffb347 !important;
+  border-color: #ffb347;
 }
+            
+
 #card #card__buttons a[data-social=twitter].active, #card #card__buttons a[data-social=twitter]:hover {
   color: #55acee;
   border-color: #55acee;
@@ -128,7 +139,7 @@ body {
   border-color: #1ab7ea;
 }
 #card #card__buttons a.active {
-  background-color: white;
+  background-color: #2C3E50;
 }
 
 #card__top-bar {
@@ -212,9 +223,22 @@ body {
   text-transform: capitalize;
 }
 
+.single-tab__header .myblack {
+  display: flex;
+  font-weight: 700;
+  text-transform: capitalize;
+color: #2C3E50 !important; 
+            }
+
+/*main font size */            
 .single-tab__content {
   font-size: 1.0rem;
   width: 60%;
+}
+.single-tab__contentblack {
+  font-size: 1.0rem;
+  width: 60%;
+    color: #2C3E50 ;
 }
 .single-tab__content .button {
   font-size: 0.7rem;
@@ -227,6 +251,10 @@ body {
   color: white ;
   background-color: white;
   border-color: white;
+}
+            
+.single-tab__content .button a {
+  color: white ;
 }
 
 .singe-tab__image {
@@ -247,7 +275,7 @@ body {
   font-size: 80%;
 }
 
-#card__credits a { color: white !important;}
+#card__credits a { color: #2C3E50 !important;}
 
 .circle-overlay {
   display: block;
@@ -261,7 +289,7 @@ body {
   border-radius: 3000px;
 }
 .circle-overlay.overlay-none {
-  background-color: #3498db;
+  background-color: #f9f9f9;
     background-image: url(https://dl.dropboxusercontent.com/s/uqt33kxcinauuca/worn-dots.png?dl=0) !important;
 }
 .circle-overlay.overlay-dribbble {
@@ -318,16 +346,19 @@ body {
       <div class="single-tab__header">
           <div><br></div>
           <div><br></div>
-        <span class="my">Roshan Selladurai</span>
+        
+          <div><br></div>
+        <span class="myblack">Roshan Selladurai</span>
+          <div><br></div>
       </div>
-      <div class="single-tab__content">
+      <div class="single-tab__contentblack">
         <p>
           Roshan is an Indiana Hoosier with a background in consulting and finance. He is currently working as an equity analyst at Peloton, covering consumer and technology markets. He is also a growth marketer at New Story Charity, a non-profit startup backed by Y Combinator.
 Roshan's passion is driven by his belief that it only takes a few people to make a big dent in the world. 
         </p>
       </div>
       <figure class="singe-tab__image">
-        <img src="https://dl.dropboxusercontent.com/s/axl9171qxsnqtlg/RoshanCircle.png?dl=0" alt=""/>
+        <img src="https://dl.dropboxusercontent.com/s/qgglrjakbcnq10l/roshan%20full.png?dl=0" alt=""/>
       </figure>
     </div>
 
@@ -363,10 +394,13 @@ Roshan's passion is driven by his belief that it only takes a few people to make
         </p>
           <p>
           Backed by Y Combinator</p>
-        <a href="http://www.newstorycharity.com/" target="_blank" class="button hollow">Read More</a>
+        <a href="http://www.newstorycharity.org/" target="_blank" class="button hollow">Read More</a>
       </div>
       <figure class="singe-tab__image">
-        <img src="https://dl.dropboxusercontent.com/s/askmwu8bmfgff7c/NewStoryWork.png?dl=0" alt="" />
+           <div><br></div>
+           <div><br></div>
+           <div><br></div>
+        <img src="https://dl.dropboxusercontent.com/s/7owkt1yesbvg56l/NSWork.png?dl=0" alt="" />
       </figure>
     </div>
  
@@ -384,10 +418,13 @@ Roshan's passion is driven by his belief that it only takes a few people to make
           Value & Growth focused investment firm
         </p>
           Research and generate long ideas in Consumer and Tech sectors<p>
-           </p>
+           </p> <div><br></div>
         <a href="http://www.pelotonwealth.com/" target="_blank" class="button hollow">Read More</a>
       </div>
       <figure class="singe-tab__image">
+          <div><br></div>
+           <div><br></div>
+           <div><br></div>
         <img src="https://dl.dropboxusercontent.com/s/u59gsqf6g8gbpze/PelotonWork.png?dl=0" alt="" />
       </figure>
     </div>
