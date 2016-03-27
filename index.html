@@ -52,7 +52,7 @@ body {
   position: relative;
   background-color: #f9f9f9  !important;
   background-image: url(https://dl.dropboxusercontent.com/s/uqt33kxcinauuca/worn-dots.png?dl=0) !important;
-  height:75% !important;
+  height:465px !important;
   width: 75%;
   box-shadow: 0px 12px 38px rgba(44, 62, 80, 0.8);
   overflow: hidden;
@@ -116,15 +116,37 @@ body {
   color: #ea4c89;
   border-color: #ea4c89;
 }
+#card #card__buttons a[data=fb].active, #card #card__buttons a[data=fb]:hover {
+  color: #3b5998 !important;
+  border-color: #3b5998;
+} 
+#card #card__buttons a[data=twitter].active, #card #card__buttons a[data=twitter]:hover {
+  color: #00aced !important;
+  border-color: #00aced;
+} 
+
+#card #card__buttons a[data=instagram].active, #card #card__buttons a[data=instagram]:hover {
+  color: #517fa4 !important;
+  border-color: #517fa4;
+} 
+            
+            #card #card__buttons a[data=gmail].active, #card #card__buttons a[data=gmail]:hover {
+  color: #dd4b39 !important;
+  border-color: #dd4b39;
+}
+            
 #card #card__buttons a[data-social=behance].active, #card #card__buttons a[data-social=behance]:hover {
   color: #81CFE0 !important;
   border-color: #81CFE0;
 }
-#card #card__buttons a[data-social=linkedin].active, #card #card__buttons a[data-social=linkedin]:hover {
+#card #card__buttons a[data-social=peloton].active, #card #card__buttons a[data-social=peloton]:hover {
   color: #ffb347 !important;
   border-color: #ffb347;
 }
-            
+#card #card__buttons a[data=linkedin].active, #card #card__buttons a[data=linkedin]:hover {
+  color: #006699 !important;
+  border-color: #006699;
+}            
 
 #card #card__buttons a[data-social=twitter].active, #card #card__buttons a[data-social=twitter]:hover {
   color: #55acee;
@@ -207,9 +229,46 @@ body {
   transition: all 0.4s cubic-bezier(0.2, 0.97, 0.39, 1) 0.7s;
     max-height: 100% !important;
     max-width: 38% !important;
-    margin-top: 20px !important;
+    margin-top: 10px !important;
 }
 
+.single-tab.active .singe-tab__image2 {
+  transform: translateX(-430px) !important;
+  transition: all 0.4s cubic-bezier(0.2, 0.97, 0.39, 1) 0.7s !important;
+    height: 400px !important;
+    width: 180px !important;
+    margin-top: 90px !important; 
+    
+} 
+            
+.single-tab.active .singe-tab__image3 {
+  transform: translateX(-450px) !important;
+  transition: all 0.4s cubic-bezier(0.2, 0.97, 0.39, 1) 0.7s !important;
+    height: 400px !important;
+    width: 200px !important;
+    margin-top: 100px !important; 
+    
+} 
+.single-tab.active .singe-tab__image4 {
+  transform: translateX(500px) !important;
+  transition: all 0.4s cubic-bezier(0.2, 0.97, 0.39, 1) 0.7s !important;
+    height: 400px !important;
+    width: 200px !important;
+    margin-top: 100px !important; 
+    
+} 
+            
+.single-tab.active .singe-tab__image4 {
+  transform: translateX(-733px) !important;
+  transition: all 0.4s cubic-bezier(0.2, 0.97, 0.39, 1) 0.7s !important;
+    height: 400px !important;
+    width: 250px !important;
+    margin-top: 60px !important; 
+    
+} 
+    
+     
+            
 .single-tab__header {
   line-height: 1;
   text-transform: uppercase;
@@ -267,6 +326,41 @@ color: #2C3E50 !important;
   right: -400px;
   top: 20px;
 }
+            
+.singe-tab__image2 {
+  transform: translateX(0);
+  transition: all 0.1s;
+  margin: 0;
+  position: absolute;
+  right: -400px;
+  top: 20px;
+}
+            
+.singe-tab__image3 {
+  transform: translateX(0);
+  transition: all 0.1s;
+  margin: 0;
+  position: absolute;
+  right: -400px;
+  top: 20px;
+}
+.singe-tab__image4 {
+  transform: translateX(0);
+  transition: all 0.1s;
+  margin: 0;
+  position: absolute;
+  right: -400px;
+  top: 20px;
+}
+            
+.singe-tab__image5 {
+  transform: translateX(0);
+  transition: all 0.1s;
+  margin: 0;
+  position: absolute;
+  right: -400px;
+  top: 20px;
+}
 
 #card__credits {
   position: relative;
@@ -299,10 +393,14 @@ color: #2C3E50 !important;
   background-color: #81CFE0;
   background-image: url(https://dl.dropboxusercontent.com/s/uqt33kxcinauuca/worn-dots.png?dl=0) !important;
 }
-.circle-overlay.overlay-linkedin {
+.circle-overlay.overlay-peloton {
   background-color: #ffb347;
     background-image: url(https://dl.dropboxusercontent.com/s/uqt33kxcinauuca/worn-dots.png?dl=0) !important;
 }
+ .circle-overlay.overlay-linkedin {
+  background-color: #006699;
+    background-image: url(https://dl.dropboxusercontent.com/s/uqt33kxcinauuca/worn-dots.png?dl=0) !important;
+}           
 .circle-overlay.overlay-twitter {
   background-color: #55acee;
     background-image: url(https://dl.dropboxusercontent.com/s/uqt33kxcinauuca/worn-dots.png?dl=0) !important;
@@ -404,7 +502,7 @@ Roshan's passion is driven by his belief that it only takes a few people to make
     </div>
  
       
-      <div id="tabs__tab-linkedin" class="single-tab" data-tab-name="linkedin">
+      <div id="tabs__tab-peloton" class="single-tab" data-tab-name="peloton">
       <div class="single-tab__header">
           <div><br></div>
            <div><br></div>
@@ -416,7 +514,7 @@ Roshan's passion is driven by his belief that it only takes a few people to make
         <p>
           Value & Growth focused investment firm
         </p>
-          Research and generate long ideas in Consumer and Tech sectors<p>
+          Research and generate long ideas in Consumer Staples/Discretionary and Tech sectors<p>
            </p>
         <a href="http://www.pelotonwealth.com/" target="_blank" class="button hollow">Read More</a>
       </div>
@@ -428,7 +526,25 @@ Roshan's passion is driven by his belief that it only takes a few people to make
       </figure>
     </div>
   
-      
+      <div id="tabs__tab-linkedin" class="single-tab" data-tab-name="linkedin">
+      <div class="single-tab__header">
+          <div><br></div>
+           <div><br></div>
+          <div><br></div>
+        <span class="my">MY</span>
+          LinkedIn
+      </div>
+      <div class="single-tab__content">
+        <p>
+        </p>
+          Connect with me on my professional network<p>
+           </p>
+        <a href="http://www.linkedin.com/roshan-selladurai" target="_blank" class="button hollow">Read More</a>
+      </div>
+      <figure class="singe-tab__image2">
+        <img src="https://dl.dropboxusercontent.com/s/rn81acx7ipojnql/Linkedin%20After.png?dl=0" alt="" />
+    </div>
+  
       <div id="tabs__tab-twitter" class="single-tab" data-tab-name="twitter">
       <div class="single-tab__header">
         <span class="my">My</span>
@@ -483,10 +599,26 @@ Roshan's passion is driven by his belief that it only takes a few people to make
   <div id="card__buttons">
     <ul class="menu">
       <li>
-          <a href="#" data-social="linkedin" class="icon-pelotonpbig"></a>
+          <a href="#" data-social="peloton" class="icon-pelotonpbig"></a>
       </li>
       <li>
         <a href="#" data-social="behance" class="fa fa-home fa-lg"></a>
+      </li>
+        <li>
+        <a href="http://www.linkedin.com/in/roshanselladurai" data="linkedin" target="_blank" class="fa fa-linkedin fa-lg"></a>
+      </li>
+        <li>
+        <a href="http://www.facebook.com/roshan.selladurai" data="fb" target="_blank" class="fa fa-facebook fa-lg"></a>
+      </li>
+        <li>
+        <a href="http://www.twitter.com/roshofosho456" data="twitter" target="_blank" class="fa fa-twitter fa-lg"></a>
+      </li>
+        <li>
+        <a href="http://www.instagram.com/therealrosho" data="instagram" target="_blank" class="fa fa-instagram fa-lg"></a>
+      </li>
+         </li>
+        <li>
+        <a href="mailto:roshan.selladurai@gmail.com" data="gmail" target="_blank" class="fa fa-envelope fa-lg"></a>
       </li>
     </ul>
   </div>

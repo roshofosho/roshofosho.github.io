@@ -345,3 +345,22 @@ body {
     content: "\e900";
 }
 
+.single-tab.active .singe-tab__image2 {
+  transform: translateX(-400px) !important;
+  transition: all 0.4s cubic-bezier(0.2, 0.97, 0.39, 1) 0.7s !important;
+    max-height: 80% !important;
+    max-width: 38% !important;
+    margin-top: 20px !important;
+}   
+
+.singe-tab__image2 {
+  transform: translateX(0);
+ max-height: 50px !important; 
+    max-width: 50px !important;
+  transition: all 0.1s;
+  margin: 0;
+  position: absolute;
+  right: -400px;
+  top: 20px;
+}
+
