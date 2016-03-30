@@ -75,9 +75,10 @@
     $card.appendChild($circleOverlay);
     
     $circleOverlay.className += 'circle-overlay overlay-' + $color;
-    $circleOverlay.style.top = ((elem.offsetTop + $elemBoundings.height / 2) - 750) + 'px';
-    $circleOverlay.style.left = ((elem.offsetLeft + $elemBoundings.width / 2) - 750) + 'px';
+    $circleOverlay.style.top = (-315) + 'px';
+    $circleOverlay.style.left = (-650) + 'px';
     
   }
   
 })();
+

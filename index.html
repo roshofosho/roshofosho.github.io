@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: center;
     align-items: center;
- padding-top: 60px !important ;
+ padding-top: 0px!important ;
   color: white;
     background-image: url(https://dl.dropboxusercontent.com/s/o4s9wnsr2zchwx3/Backgrund.png?dl=0);
   background-repeat:no-repeat;
@@ -53,14 +53,14 @@ body {
   position: relative;
   background-color: #f9f9f9  !important;
   background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0) !important;
-  height:465px !important;
-  width: 900px;
+  height: 550px !important;
+  width: 940px;
   box-shadow: 0px 12px 38px rgba(44, 62, 80, 0.8);
   overflow: hidden;
 }
             
-#card a { color: #2C3E50 !important; }
-
+#card a { color: white; }
+#card a:link { color: white; text-decoration: underline;}
 #card.white {
   color: #f9f9f9;
 }
@@ -93,7 +93,7 @@ body {
   cursor: inherit;
 }
 #card #card__buttons {
-  padding: 150px 15px; 
+  padding: 240px 15px; 
 }
 #card #card__buttons a {
   color: white ;
@@ -144,6 +144,12 @@ body {
   color: #ffb347 !important;
   border-color: #ffb347;
 }
+            
+#card #card__buttons a[data-social=about].active, #card #card__buttons a[data-social=about]:hover {
+  color: #4EB347 !important;
+  border-color: #4EB347;
+}
+            
 #card #card__buttons a[data=linkedin].active, #card #card__buttons a[data=linkedin]:hover {
   color: #006699 !important;
   border-color: #006699;
@@ -229,9 +235,9 @@ body {
   transform: translateX(-400px);
   transition: all 0.4s cubic-bezier(0.2, 0.97, 0.39, 1) 0.7s;
     max-height: 100% !important;
-    max-width: 38% !important;
+    max-width: 360px !important;
     margin-top: 0px !important;
-    vertical-align: middle !important;
+    align-content: center !important;
 }
 
 .single-tab.active .singe-tab__image2 {
@@ -269,7 +275,7 @@ body {
     
 } 
     
-     
+            .menu a { color: #2C3E50 !important; text-decoration: none !important;}   
             
 .single-tab__header {
   line-height: 1;
@@ -373,7 +379,7 @@ color: #2C3E50 !important;
 }
 
 #card__credits a { color: #2C3E50 !important;}
-
+            
 .circle-overlay {
   display: block;
   position: absolute;
@@ -381,8 +387,8 @@ color: #2C3E50 !important;
   transform: scale(1);
   animation-duration: 1s;
   z-index: 5;
-  width: 1175px;
-  height: 1175px;
+ width: 1200px;
+  height: 1200px;
   border-radius: 3000px;
 }
 .circle-overlay.overlay-none {
@@ -396,24 +402,14 @@ color: #2C3E50 !important;
   height: 1800px;
   border-radius: 3000px;
 }
- 
-.circle-overlay.overlay-peloton {
-   display: block;
-  position: absolute;
-  animation-name: expandCircleOverlay;
-  transform: scale(1);
-  animation-duration: 1s;
-  z-index: 5;
-  width: 1220px;
-  height: 1220px;
-  border-radius: 3000px; }
-    
+
 .circle-overlay.overlay-none {
   background-color: #f9f9f9;
     background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0) !important;
 }
-.circle-overlay.overlay-dribbble {
-  background-color: #ea4c89;
+.circle-overlay.overlay-about {
+  background-color: #4EB347;
+    background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0) !important;
 }
 .circle-overlay.overlay-behance {
   background-color: #81CFE0;
@@ -475,10 +471,10 @@ color: #2C3E50 !important;
        <span class="myblack">Roshan Selladurai</span>
        <font color=#2C3E50>About Me</font>
       </div>
+        <br>
       <div class="single-tab__contentblack">
         <p>
-          Roshan is an Indiana Hoosier with a background in consulting and finance. He is currently working as an equity analyst at Peloton. He is also a growth marketer at New Story Charity, a non-profit startup backed by Y Combinator.
-Roshan's passion is driven by his belief that it only takes a few people to make a big dent in the world. 
+          Roshan is an Indiana Hoosier with a background in consulting and finance. He is currently working as an equity analyst at Peloton. He is also a growth marketer at New Story Charity, a non-profit startup backed by Y Combinator. Roshan previosly held stints in consulting, capital markets, and a human-computer interaction technology startup. In his free time he enjoys playing strategy games with friends, traveling, and reading.
         </p>
       </div>
       <figure class="singe-tab__image">
@@ -512,6 +508,7 @@ Roshan's passion is driven by his belief that it only takes a few people to make
        <span class="my">New Story Charity</span>
        Growth Marketer
       </div>
+          <br>
       <div class="single-tab__content">
         <p>
           Connecting donors to homeless families in danger to create life changing stories.
@@ -534,6 +531,7 @@ Roshan's passion is driven by his belief that it only takes a few people to make
         <span class="my">Peloton Wealth Strategists</span>
           Equity Analyst
       </div>
+          <br>
       <div class="single-tab__content">
         <p>
           Value & Growth focused investment firm
@@ -548,6 +546,33 @@ Roshan's passion is driven by his belief that it only takes a few people to make
       </figure>
     </div>
   
+      
+      <div id="tabs__tab-about" class="single-tab" data-tab-name="about">
+          <div class="single-tab__header"></div>
+          <div class="single-tab__content"><font>
+              <p><b>I'm driven by</b> my personal values and faith</p>
+              <p><b>I believe</b> that there is a real freedom that comes through service</p>
+              <p><b>That mindset comes from</b> my parents who always served first and received last</p>
+              <p><b>I studied at Indiana University,</b> and learned that the best achievements are with your team</p>
+              <p><b>At Peloton, I've learned</b> that a company's value is entirely contingent upon the future— history does nothing for growth.</p>
+              <p><b>At New Story, I've seen</b> how confidence and humility can change the world— audacios mission with selfless execution</p>
+              <p><b>I'm inspired by </b><a href="https://www.airbnb.com/about/founders" target="_blank">Brian</a>, 
+                  <a href="http://www.charitywater.org/about/scotts_story.php" target="_blank">Scott, </a>, 
+                  <a href="https://newstorycharity.org/the-team" target="_blank">Brett, </a>, 
+                  <a href="https://www.ted.com/talks/salman_khan_let_s_use_video_to_reinvent_education#" target="_blank">Sal</a>, 
+                  <a href="http://www.wsj.com/articles/tristan-walker-a-new-approach-to-personal-care-products-1450458099" target="_blank">Tristan</a>, 
+                  <a href="https://www.youtube.com/watch?v=4cl8X02Xd1I" target="_blank">Doug</a>, and
+                  <a href="http://lowercasecapital.com/proprietor/" target="_blank">Chris</a> 
+                  </p>
+               <p><b>I define success</b> as leaving things better than when I found them</p>
+              </font>  
+      </div>
+      <figure class="singe-tab__image">
+        <img src="https://dl.dropboxusercontent.com/s/qgglrjakbcnq10l/roshan%20full.png?dl=0" alt="" />
+      </figure>
+          </div>
+          
+      
       <div id="tabs__tab-linkedin" class="single-tab" data-tab-name="linkedin">
       <div class="single-tab__header">
           <div><br></div>
@@ -620,7 +645,10 @@ Roshan's passion is driven by his belief that it only takes a few people to make
   
   <div id="card__buttons">
     <ul class="menu">
-      <li>
+        <li>
+        <a href="#" data-social="about" class="fa fa-user fa-lg"></a>
+      </li>
+        <li>
           <a href="#" data-social="peloton" class="icon-pelotonpbig"></a>
       </li>
       <li>
