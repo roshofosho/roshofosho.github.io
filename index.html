@@ -70,6 +70,7 @@ body {
 #card.white #top-bar__back-btn {
   opacity: 1;
   cursor: pointer;
+    color: white ;
 }
 #card.white #top-bar__lang-selector a {
   color: #2C3E50;
@@ -91,9 +92,12 @@ body {
   opacity: 0;
   transition-duration: .35s;
   cursor: inherit;
+    color: white ; 
 }
 #card #card__buttons {
-  padding: 240px 15px; 
+  padding: 30px !important;
+    padding-left: 0px !important;
+    transform: translateX(-10px) !important;
 }
 #card #card__buttons a {
   color: white ;
@@ -114,8 +118,8 @@ body {
   border-color: #2C3E50;
 }
 #card #card__buttons a[data-social=dribbble].active, #card #card__buttons a[data-social=dribbble]:hover {
-  color: #ea4c89;
-  border-color: #ea4c89;
+  color: #42A4E0 !important;
+  border-color: #42A4E0;
 }
 #card #card__buttons a[data=fb].active, #card #card__buttons a[data=fb]:hover {
   color: #3b5998 !important;
@@ -205,10 +209,11 @@ body {
 #top-bar__close-btn,
 #top-bar__back-btn {
   cursor: pointer;
+    color: white ; 
 }
 
 #card__tabs {
-  flex: 0 0 190px;
+  flex: 0 0 490px;
   position: relative;
   z-index: 20;
   position: relative;
@@ -325,6 +330,32 @@ color: #2C3E50 !important;
   color: white ;
 }
 
+.single-tab__content2 {
+  font-size: 1.0rem;
+  width: 100%;
+    padding-top: 20px !important; 
+    padding-left: 10px !important;
+    align-content: center !important;
+    align-items: center !important;
+}
+
+.single-tab__content2 .button {
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  margin-bottom: 0;
+  border-color: white;
+  color: white;
+}
+.single-tab__content2 .button:hover {
+  color: white ;
+  background-color: white;
+  border-color: white;
+}
+            
+.single-tab__content2 .button a {
+  color: white ;
+}
+            
 .singe-tab__image {
   transform: translateX(0);
  max-height: 100px !important; 
@@ -379,13 +410,14 @@ color: #2C3E50 !important;
 }
 
 #card__credits a { color: #2C3E50 !important;}
+   #card  #tabs__tab-dribbble #card__buttons {display: none !important;}
             
 .circle-overlay {
   display: block;
   position: absolute;
   animation-name: expandCircleOverlay;
   transform: scale(1);
-  animation-duration: 1s;
+  animation-duration: 2s;
   z-index: 5;
  width: 1200px;
   height: 1200px;
@@ -398,8 +430,19 @@ color: #2C3E50 !important;
   transform: scale(1);
   animation-duration: 2.5s;
   z-index: 5;
-  width: 1800px;
-  height: 1800px;
+  width: 1850px;
+  height: 1850px;
+  border-radius: 3000px;
+}
+.circle-overlay.overlay-dribbble {
+  display: block;
+  position: absolute;
+  animation-name: expandCircleOverlay;
+  transform: scale(1);
+  animation-duration: 2s;
+  z-index: 5;
+ width: 1850px; !important;
+  height: 1850px; !important;
   border-radius: 3000px;
 }
 
@@ -417,6 +460,10 @@ color: #2C3E50 !important;
 }
 .circle-overlay.overlay-peloton {
   background-color: #ffb347;
+    background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0) !important;
+}
+.circle-overlay.overlay-dribbble {
+  background-color: #42A4E0;
     background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0) !important;
 }
  .circle-overlay.overlay-linkedin {
@@ -455,13 +502,14 @@ color: #2C3E50 !important;
     <div id="card">
   
   <div id="card__top-bar">
-    <i id="top-bar__back-btn" class="fa fa-long-arrow-left fa-lg" data-social="none"></i>
-    <div id="top-bar__lang-selector" class="menu">
+    <i id="top-bar__back-btn" class="fa fa-arrow-circle-left  fa-2x" data-social="none"></i>
    
-      </div>
   </div>
   
   <div id="card__tabs">
+       <div id="top-bar__lang-selector" class="menu">
+   
+      </div>
     <div id="tabs__tab-main" class="single-tab active" data-tab-name="main">
       <div class="single-tab__header">
           <div><br></div>
@@ -480,24 +528,51 @@ color: #2C3E50 !important;
       <figure class="singe-tab__image">
         <img src="https://dl.dropboxusercontent.com/s/qgglrjakbcnq10l/roshan%20full.png?dl=0" alt=""/>
       </figure>
-    </div>
+        
+        
+        <div id="card__buttons">
+    <ul class="menu">
+        <li>
+        <a href="#" data-social="about" class="fa fa-user fa-lg"></a>
+      </li>
+         <li>
+        <a href="#" data-social="dribbble" class="fa fa-heart fa-lg"></a>
+      </li>
+        <li>
+          <a href="#" data-social="peloton" class="icon-pelotonpbig"></a>
+      </li>
+      <li>
+        <a href="#" data-social="behance" class="fa fa-home fa-lg"></a>
+      </li>
+        <li>
+        <a href="http://www.linkedin.com/in/roshanselladurai" data="linkedin" target="_blank" class="fa fa-linkedin fa-lg"></a>
+      </li>
+        <li>
+        <a href="http://www.facebook.com/roshan.selladurai" data="fb" target="_blank" class="fa fa-facebook fa-lg"></a>
+      </li>
+        <li>
+        <a href="http://www.twitter.com/roshofosho456" data="twitter" target="_blank" class="fa fa-twitter fa-lg"></a>
+      </li>
+        <li>
+        <a href="http://www.instagram.com/therealrosho" data="instagram" target="_blank" class="fa fa-instagram fa-lg"></a>
+      </li>
+         </li>
+        <li>
+        <a href="mailto:roshan.selladurai@gmail.com" data="gmail" target="_blank" class="fa fa-envelope fa-lg"></a>
+      </li>
+    </ul>
+        
+        
+      </div> </div>
 
-      
+     
       <div id="tabs__tab-dribbble" class="single-tab" data-tab-name="dribbble">
       <div class="single-tab__header">
-        <span class="my">My</span>
-        Dribbble.
       </div>
-      <div class="single-tab__content">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere cum sit aut quos quia temporibus officia veniam, ducimus esse non.
-        </p>
-        <a href="#" class="button hollow">Read More</a>
-      </div>
-      <figure class="singe-tab__image">
-        <img src="" alt="" />
-      </figure>
+      <div class="single-tab__content2">
+        <img src="https://dl.dropboxusercontent.com/s/0ajwdy2au8vo2ye/Interest.png?dl=0" alt=""/>
     </div>
+      </div>
    
       
       <div id="tabs__tab-behance" class="single-tab" data-tab-name="behance">
@@ -643,39 +718,9 @@ color: #2C3E50 !important;
     </div>
   </div>
   
-  <div id="card__buttons">
-    <ul class="menu">
-        <li>
-        <a href="#" data-social="about" class="fa fa-user fa-lg"></a>
-      </li>
-        <li>
-          <a href="#" data-social="peloton" class="icon-pelotonpbig"></a>
-      </li>
-      <li>
-        <a href="#" data-social="behance" class="fa fa-home fa-lg"></a>
-      </li>
-        <li>
-        <a href="http://www.linkedin.com/in/roshanselladurai" data="linkedin" target="_blank" class="fa fa-linkedin fa-lg"></a>
-      </li>
-        <li>
-        <a href="http://www.facebook.com/roshan.selladurai" data="fb" target="_blank" class="fa fa-facebook fa-lg"></a>
-      </li>
-        <li>
-        <a href="http://www.twitter.com/roshofosho456" data="twitter" target="_blank" class="fa fa-twitter fa-lg"></a>
-      </li>
-        <li>
-        <a href="http://www.instagram.com/therealrosho" data="instagram" target="_blank" class="fa fa-instagram fa-lg"></a>
-      </li>
-         </li>
-        <li>
-        <a href="mailto:roshan.selladurai@gmail.com" data="gmail" target="_blank" class="fa fa-envelope fa-lg"></a>
-      </li>
-    </ul>
+  
   </div>
   
-  <div id="card__credits" class="text-right">
-    Contact me at <strong>roshan.selladurai@gmail.com</strong>
-  </div>
   
 </div>
     
