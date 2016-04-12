@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?cxsxoy');
-    src:    url('fonts/icomoon.eot?cxsxoy#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?cxsxoy') format('truetype'),
-        url('fonts/icomoon.woff?cxsxoy') format('woff'),
-        url('fonts/icomoon.svg?cxsxoy#icomoon') format('svg');
+    src:    url('fonts/icomoon.eot?f4c9al');
+    src:    url('fonts/icomoon.eot?f4c9al#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?f4c9al') format('truetype'),
+        url('fonts/icomoon.woff?f4c9al') format('woff'),
+        url('fonts/icomoon.svg?f4c9al#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -25,6 +25,9 @@
 }
 
 .icon-pelotonpbig:before {
+    content: "\e903";
+}
+.icon-FR:before {
     content: "\e900";
 }
 

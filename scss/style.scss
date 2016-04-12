@@ -317,11 +317,11 @@ body {
 /* fonts */
 @font-face {
     font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?dduxh');
-    src:    url('fonts/icomoon.eot?dduxh#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?dduxh') format('truetype'),
-        url('fonts/icomoon.woff?dduxh') format('woff'),
-        url('fonts/icomoon.svg?dduxh#icomoon') format('svg');
+    src:    url('fonts/icomoon.eot?f4c9al');
+    src:    url('fonts/icomoon.eot?f4c9al#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?f4c9al') format('truetype'),
+        url('fonts/icomoon.woff?f4c9al') format('woff'),
+        url('fonts/icomoon.svg?f4c9al#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -341,9 +341,15 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-pelotonicon:before {
-    content: "\e900";
+.icon-pelotonpbig:before {
+    content: "\e903";
+    font-weight: 500 !important; 
 }
+.icon-FR:before {
+    content: "\e900";
+    font-size: 25px !important;
+}
+
 
 .single-tab.active .singe-tab__image2 {
   transform: translateX(-400px) !important;
