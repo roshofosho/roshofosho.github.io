@@ -49,7 +49,7 @@ body {
         height: 100vh;
     width: 100% !important ;
 }
-            body p {font-size: 16px !important;}
+            body p {font-size: 16px;}
 
 .text-right {
   text-align: right;
@@ -63,14 +63,15 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  background-color: #f9f9f9  !important;
-  background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0) !important;
+  background-color: #f9f9f9;
+  background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0);
   height: 550px !important;
   width: 940px;
   box-shadow: 0px 12px 38px rgba(44, 62, 80, 0.8);
   overflow: hidden;
 }
             
+
 #card a { color: white; }
 #card a:link { color: white; text-decoration: underline;}
 #card.white {
@@ -164,6 +165,11 @@ body {
 #card #card__buttons a[data-social=peloton].active, #card #card__buttons a[data-social=peloton]:hover {
   color: #ffb347 !important;
   border-color: #ffb347;
+}
+            
+#card #card__buttons a[data-social=nielsen].active, #card #card__buttons a[data-social=nielsen]:hover {
+  color: #329DDC !important;
+  border-color: #329DDC;
 }
      
             
@@ -270,7 +276,27 @@ body {
   transition: all 0.4s cubic-bezier(0.2, 0.97, 0.39, 1) 0.7s;
     max-height: 100% !important;
     max-width: 360px !important;
-    margin-top: 0px !important;
+    margin-top: -10px !important;
+    align-content: center !important;
+}
+            
+.single-tab.active .singe-tab__imageL {
+  transform: translateX(-600px);
+  transition: all 0.4s cubic-bezier(0.2, 0.97, 0.39, 1) 0.7s;
+    max-height: 100% !important;
+    max-width: 660px !important;
+    margin-top: -20px !important;
+    padding-top: 20px !important;
+    align-content: center !important;
+}
+            
+.single-tab.active .singe-tab__imageR {
+  transform: translateX(-400px);
+  transition: all 0.4s cubic-bezier(0.2, 0.97, 0.39, 1) 0.7s;
+    max-height: 100% !important;
+    max-width: 360px !important;
+    margin-top: -20px !important;
+     padding-top: 20px !important;
     align-content: center !important;
 }
 
@@ -315,14 +341,33 @@ body {
   line-height: 1;
   text-transform: uppercase;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 10px;
 }
+            
+span.custom1 {
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight:300;
+  margin-bottom: 10px;
+}            
             
 .single-tab__header .my {
   display: flex;
   font-weight: 700;
   text-transform: capitalize;
+}
+span.highlightP {
+    background-color: #79BAC4;
+}
+span.highlightN {
+    background-color: #81CFE0;
+}
+            span.highlightNt {
+    background-color: #81CFE0;
+                font-size: 18px !important;
+                
 }
 
 .single-tab__header .myblack {
@@ -334,8 +379,34 @@ color: #2C3E50 !important;
 
 /*main font size */            
 .single-tab__content {
-  font-size: 1.0rem;
-  width: 60%;
+  font-size: 1.7rem;
+  width: 55%;
+}
+            
+            .singe-tab__imageL p{
+                font-size 2.0rem !important;
+                line-height: 70% !important;
+                color: black !important;
+            }
+             .singe-tab__imageL b, strong {
+                  color: #4EB347 !important;
+            }
+            
+            .singe-tab__imageR b, strong {
+                  color: #4EB347 !important;
+            }
+            
+            .singe-tab__imageR p{
+                font-size 2.0rem !important;
+                line-height: 70% !important;
+                color: black !important;
+            }
+            
+            
+.single-tab__content1 p{
+  font-size: 1.13rem;
+  width: 55%;
+    font-weight: 400 !important;
 }
 .single-tab__contentblack {
   font-size: 1.0rem;
@@ -366,6 +437,8 @@ color: #2C3E50 !important;
     align-content: center !important;
     align-items: center !important;
 }
+            
+           
 
 .single-tab__content2 .button {
   font-size: 0.7rem;
@@ -385,6 +458,26 @@ color: #2C3E50 !important;
 }
             
 .singe-tab__image {
+  transform: translateX(0);
+ max-height: 100px !important; 
+    max-width: 250px !important;
+  transition: all 0.1s;
+  margin: 0;
+  position: absolute;
+  right: -400px;
+  top: 20px;
+}
+            .singe-tab__imageL {
+  transform: translateX(0);
+ max-height: 100px !important; 
+    max-width: 250px !important;
+  transition: all 0.1s;
+  margin: 0;
+  position: absolute;
+  right: -400px;
+  top: 20px;
+}
+            .singe-tab__imageR {
   transform: translateX(0);
  max-height: 100px !important; 
     max-width: 250px !important;
@@ -439,7 +532,8 @@ color: #2C3E50 !important;
 
 #card__credits a { color: #2C3E50 !important;}
    #card  #tabs__tab-dribbble #card__buttons {display: none !important;}
-            
+
+
 .circle-overlay {
   display: block;
   position: absolute;
@@ -447,8 +541,8 @@ color: #2C3E50 !important;
   transform: scale(1);
   animation-duration: 2s;
   z-index: 5;
- width: 1200px;
-  height: 1200px;
+ width: 1180px;
+  height: 1180px;
   border-radius: 3000px;
 }
 .circle-overlay.overlay-none {
@@ -462,7 +556,7 @@ color: #2C3E50 !important;
   height: 1850px;
   border-radius: 3000px;
 }
-.circle-overlay.overlay-dribbble {
+.circle-overlay.overlay-pelotonS {
   display: block;
   position: absolute;
   animation-name: expandCircleOverlay;
@@ -473,21 +567,61 @@ color: #2C3E50 !important;
   height: 1850px; !important;
   border-radius: 3000px;
 }
+            
+.circle-overlay.overlay-nielsenS {
+  display: block;
+  position: absolute;
+  animation-name: expandCircleOverlay;
+  transform: scale(1);
+  animation-duration: 2s;
+  z-index: 5;
+ width: 1850px; !important;
+  height: 1850px; !important;
+  border-radius: 3000px;
+}            
+            
+.circle-overlay.overlay-behanceS {
+  display: block;
+  position: absolute;
+  animation-name: expandCircleOverlay;
+  transform: scale(1);
+  animation-duration: 2s;
+  z-index: 5;
+ width: 1850px; !important;
+  height: 1850px; !important;
+  border-radius: 3000px;
+}
+            
+            .circle-overlay.overlay-aboutf {
+  display: block;
+  position: absolute;
+  animation-name: expandCircleOverlay;
+  transform: scale(1);
+  animation-duration: 2s;
+  z-index: 5;
+ width: 1850px; !important;
+  height: 1850px; !important;
+  border-radius: 1500px;
+}
 
+                     
+            
 .circle-overlay.overlay-none {
   background-color: #f9f9f9;
     background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0) !important;
 }
 .circle-overlay.overlay-about {
   background-color: #4EB347;
-    background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0) !important;
+     background-image:url(https://dl.dropboxusercontent.com/s/0efhfk6yb49zb8i/aboutbackground.png?dl=0) !important;
+    background-size: 130% ;
 }
 .circle-overlay.overlay-behance {
-  background-color: #81CFE0;
-  background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0) !important;
+ background-color: #81CFE0;
+    background-image:url(https://dl.dropboxusercontent.com/s/b8ke6qo9dtbr28l/newstorybackground1.png?dl=0) !important;
+    background-size: 130% ;
 }
-.circle-overlay.overlay-peloton {
-  background-color: #ffb347;
+.circle-overlay.overlay-pelotons {
+  background-color: white;
     background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0) !important;
 }
             
@@ -500,10 +634,21 @@ color: #2C3E50 !important;
             
             
             
-.circle-overlay.overlay-dribbble {
-  background-color: #42A4E0;
-    background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0) !important;
+.circle-overlay.overlay-peloton {
+  background-color: #79BAC4;
+    background-image:url(https://dl.dropboxusercontent.com/s/9epn73vbvxg0xp5/backgroundrepeatwithspace.png?dl=0) !important;
+    background-size: 130% ;
+
 }
+            
+.circle-overlay.overlay-nielsen {
+  background-color: #38ADF2;
+    background-image:url(https://dl.dropboxusercontent.com/s/4tqfl618490brby/nielsenbackground.png?dl=0) !important;
+    background-size: 130% ;
+
+}            
+            
+            
  .circle-overlay.overlay-linkedin {
   background-color: #006699;
     background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0) !important;
@@ -574,14 +719,14 @@ color: #2C3E50 !important;
         <li>
         <a href="#" data-social="about" class="fa fa-user fa-lg"></a>
       </li>
-         <li>
-        <a href="#" data-social="dribbble" class="fa fa-heart fa-lg"></a>
-      </li>
         <li>
           <a href="#" data-social="peloton" class="icon-pelotonpbig"></a>
       </li>
       <li>
         <a href="#" data-social="behance" class="fa fa-home fa-lg"></a>
+      </li>
+         <li>
+          <a href="#" data-social="nielsen" class="icon-nielsen"></a>
       </li>
         <li>
         <a href="http://www.linkedin.com/in/roshanselladurai" data="linkedin" target="_blank" class="fa fa-linkedin fa-lg"></a>
@@ -608,20 +753,11 @@ color: #2C3E50 !important;
 
      
       <div id="tabs__tab-dribbble" class="single-tab" data-tab-name="dribbble">
-      <div class="single-tab__header">
-      </div>
-      <div class="single-tab__content2">
-        <img src="https://dl.dropboxusercontent.com/s/0ajwdy2au8vo2ye/Interest.png?dl=0" alt=""/>
-    </div>
-      </div>
-   
-      
-      <div id="tabs__tab-behance" class="single-tab" data-tab-name="behance">
-      <div class="single-tab__header">
+     <div class="single-tab__header">
         <div><br></div>
            <div><br></div>
           <div><br></div>
-       <span class="my">New Story Charity</span>
+       <span class="my">Peloton Wealth Strategists</span>
        Growth Marketer
       </div>
           <br>
@@ -633,8 +769,25 @@ color: #2C3E50 !important;
           Backed by Y Combinator</p>
         <a href="http://www.newstorycharity.org/" target="_blank" class="button hollow">Learn More</a>
       </div>
+      </div>
+      
+   
+      
+      <div id="tabs__tab-behance" class="single-tab" data-tab-name="behance">
+      <div class="single-tab__header">
+          <div><br></div>
+           <div><br></div>
+          <div><br></div>
+      <span class="my">New Story Charity</span>
+         Growth Marketing<br>
+          <span class="custom1">2.2016 - Present</span>
+      </div>
+          <br>
+      <div class="single-tab__content">
+          Connecting donors to homeless families in danger to create life changing stories. Backed by Y Combinator.
+          <br>
+      </div>
       <figure class="singe-tab__image">
-        <img src="https://dl.dropboxusercontent.com/s/83acfwtr8pm0iu3/NewStoryWebsite.png?dl=0" alt="" />
       </figure>
     </div>
  
@@ -644,43 +797,100 @@ color: #2C3E50 !important;
           <div><br></div>
            <div><br></div>
           <div><br></div>
-        <span class="my">Peloton Wealth Strategists</span>
-          Equity Analyst
+      <span class="my">Peloton Capital Partners</span>
+         Research Lead<br>
+          <span class="custom1">6.2016 - Present</span>
       </div>
           <br>
       <div class="single-tab__content">
-        <p>
-          Value & Growth focused investment firm
-        </p>
-          Research and generate long ideas in Consumer, Health Care,
-          <br>and Tech sectors<p>
-           </p>
-        <a href="http://www.pelotonwealth.com/" target="_blank" class="button hollow">Learn More</a>
+          Hedge fund focused on delivering superior returns for investors through quantitative methods.
+          <br>
       </div>
-      <figure class="singe-tab__image">
-        <img src="https://dl.dropboxusercontent.com/s/equsf1lukrsfc56/PElotonWebsite.png?dl=0" alt="" />
+      <figure class="singe-tab__imageL"><span class="abouttext1">
+                <p><b></b>  </p>
+            <p></p> 
+              <p></p> 
+              <p></p> 
+              <p></p> 
+              <br>
+          <br>
+          <br>
+              <p><b>What I Do</b>  </p>
+            <p>Data Analysis</p> 
+              <p>Strategic Analysis</p> 
+              <p>Marketing</p> 
+              <p></p> 
+              <br>
+               <p><b>Resources I Use</b>  </p>
+            <p>YCharts</p> 
+              <p>Equity Research</p> 
+              <p>MS Excel</p> 
+              <p>R Studio</p>
+               <br>
+               </span> 
+      </figure>
+           <figure class="singe-tab__imageR"><span class="abouttext1">
+             <p><b></b>  </p>
+            <p></p> 
+              <p></p> 
+              <p></p> 
+              <p></p> 
+              <br>
+          <br>
+          <br>
+              <p><b>What I Do</b>  </p>
+            <p>Data Analysis</p> 
+              <p>Strategic Analysis</p> 
+              <p>Marketing</p> 
+              <p></p> 
+              <br>
+               <p><b>Resources I Use</b>  </p>
+            <p>YCharts</p> 
+              <p>Equity Research</p> 
+              <p>MS Excel</p> 
+              <p>R Studio</p>
+               <br>
+               </span> 
+          
       </figure>
     </div>
+      
+          <div id="tabs__tab-nielsen" class="single-tab" data-tab-name="nielsen">
+      <div class="single-tab__header">
+          <div><br></div>
+           <div><br></div>
+          <div><br></div>
+      <span class="my">Nielsen Company</span>
+          Analyst Intern<br>
+          <span class="custom1">6.2014 - 8.2014</span>
+      </div>
+          <br>
+      <div class="single-tab__content">
+          Consulting focused on using extensive data to solve complex problems.
+          <br>
+      </div>
+      <figure class="singe-tab__image">
+      </figure>
+    </div>
+      
+      
+      
   
         <div id="tabs__tab-foodraisers" class="single-tab" data-tab-name="foodraisers">
       <div class="single-tab__header">
           <div><br></div>
            <div><br></div>
           <div><br></div>
-        <span class="my">Foodraisers</span>
-          Co-Founder
+      <span class="my">Peloton Capital Partners</span>
+         Research Lead<br>
+          <span class="custom1">6.2016 - Present</span>
       </div>
           <br>
       <div class="single-tab__content">
-        <p>
-          Local restaurant deals used to grow local causes
-        </p>
-          Coming in 2016
-           </p>
-        <a href="http://news.iupui.edu/releases/2014/03/pitch-winners-2014.shtml" target="_blank" class="button hollow">Learn More</a>
+          Hedge fund focused on delivering superior returns for investors through quantitative methods.
+          <br>
       </div>
       <figure class="singe-tab__image">
-        <img src="https://dl.dropboxusercontent.com/s/mnsqt4jvwsls95t/FoodraisersWeb.png?dl=0" alt="" />
       </figure>
     </div>
         
@@ -688,26 +898,56 @@ color: #2C3E50 !important;
       
       <div id="tabs__tab-about" class="single-tab" data-tab-name="about">
           <div class="single-tab__header"></div>
-          <div class="single-tab__content"><font>
+          <div class="single-tab__content1"><font><span class="abouttext">
               <p><b>I'm driven by</b> my personal values and faith</p>
               <p><b>I believe</b> that there is a real freedom that comes through service</p>
               <p><b>That mindset comes from</b> my parents who always served first and received last</p>
               <p><b>I studied at Indiana University,</b> and learned that the best achievements are with your team</p>
-              <p><b>At Peloton, I've learned</b> that a company's value is entirely contingent upon the future— history does nothing for growth.</p>
-              <p><b>At New Story, I've seen</b> how confidence and humility can change the world— an audacious mission with selfless execution</p>
-              <p><b>I'm inspired by </b><a href="https://www.airbnb.com/about/founders" target="_blank">Brian</a>, 
-                  <a href="http://www.charitywater.org/about/scotts_story.php" target="_blank">Scott</a>, 
-                  <a href="https://newstorycharity.org/the-team" target="_blank">Brett</a>, 
-                  <a href="https://www.ted.com/talks/salman_khan_let_s_use_video_to_reinvent_education#" target="_blank">Sal</a>, 
-                  <a href="http://www.wsj.com/articles/tristan-walker-a-new-approach-to-personal-care-products-1450458099" target="_blank">Tristan</a>, 
-                  <a href="https://www.youtube.com/watch?v=4cl8X02Xd1I" target="_blank">Doug</a>, and
-                  <a href="http://lowercasecapital.com/proprietor/" target="_blank">Chris</a> 
-                  </p>
-               <p><b>I define success</b> as leaving things better than when I found them</p>
-              </font>  
+              <p><b>At Peloton, I've learned</b> that value is entirely contingent upon the future— history does nothing for growth.</p>
+              <p><b>At New Story, I've seen</b> how confidence and humility changes the world</p>
+              <p><b>I define success</b> as leaving things better than when I found them</p></span></font>
+          
       </div>
-      <figure class="singe-tab__image">
-        <img src="https://dl.dropboxusercontent.com/s/qgglrjakbcnq10l/roshan%20full.png?dl=0" alt="" />
+          <figure class="singe-tab__imageL"><span class="abouttext1">
+                <p><b>What I'm Interested In</b>  </p>
+            <p>Data Analysis</p> 
+              <p>Social Impact Investing</p> 
+              <p>Startups</p> 
+              <p>Design Thinking</p> 
+              <br>
+              <p><b>Where I've Been</b>  </p>
+            <p>Austria</p> 
+              <p>Switzerland</p> 
+              <p>Dubai</p> 
+              <p>France</p> 
+              <br>
+               <p><b>Who Inspires Me</b>  </p>
+            <p>Scott Harrison</p> 
+              <p>Brett Hagler</p> 
+              <p>Tristan Walker</p> 
+              <p>Chris Sacca</p>
+               <br>
+               </span> 
+      </figure>
+           <figure class="singe-tab__imageR"><span class="abouttext1">
+              <p><b>What I'm Reading</b>  </p>
+            <p>How Not To Be Wrong</p> 
+              <p>God and Money</p> 
+              <p>Flash Boys</p>
+              <p>Modern Romance</p>
+               <br>
+               <p><b>Who I'm Listening To</b></p>
+            <p>John Mayer</p> 
+              <p>Drake</p> 
+              <p>Justin Bieber</p> 
+              <p>Jon Guerra</p> 
+              <br>
+               <p><b>What I'm Watching</b>  </p>
+            <p>HTGAWM</p> 
+               <p>The Night Of</p>
+               <p>Blackish</p>
+               <p>This Is Us</p></span> 
+          
       </figure>
           </div>
           
