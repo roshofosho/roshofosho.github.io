@@ -37,20 +37,18 @@
                         
 body {
   font-family: 'Open Sans', Helvetica, sans-serif;
-  font-size: 16px;
   display: flex;
   justify-content: center;
     align-items: center;
  padding-top: 0px!important ;
-  color: white;
+  color: #f9f9f9;
     background-image: url(https://dl.dropboxusercontent.com/s/o4s9wnsr2zchwx3/Backgrund.png?dl=0);
   background-repeat:no-repeat;
    background-size:cover;
         height: 100vh;
     width: 100% !important ;
 }
-            body p {font-size: 16px;}
-
+        
 .text-right {
   text-align: right;
 }
@@ -63,8 +61,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  background-color: #f9f9f9;
-  background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0);
+  background-color: white;
   height: 550px !important;
   width: 940px;
   box-shadow: 0px 12px 38px rgba(44, 62, 80, 0.8);
@@ -73,21 +70,24 @@ body {
             
 
 #card a { color: white; }
-#card a:link { color: white; text-decoration: underline;}
+#card a:link { color: black; text-decoration: none;}
 #card.white {
   color: #f9f9f9;
 }
-#card.white {
-  color: #2C3E50 !important; 
+
+            ///**main font color**///
+            
+            #card.white {
+  color: #BDBDBD !important; 
 }
 #card.white #top-bar__back-btn {
   opacity: 1;
-  cursor: pointer;
+  cursor: pointer ;
     color: white ;
 }
 #card.white #top-bar__lang-selector a {
-  color: #2C3E50;
-  border-color: #2C3E50;
+  color: #BDBDBD;
+  border-color: #BDBDBD;
 }
 #card.white #top-bar__lang-selector a.active {
   color: white;
@@ -101,14 +101,23 @@ body {
   border-color: #2C3E50;
 }
 #card #top-bar__back-btn {
-  transition-property: opacity;
+transition-property: opacity;
   opacity: 0;
   transition-duration: .35s;
   cursor: inherit;
     color: white ; 
 }
+            
+#card #top-bar__rslogo {
+transition-property: opacity;
+  opacity: 0;
+  transition-duration: .35s;
+  cursor: inherit;
+    color: white ; 
+}            
+            
 #card #card__buttons {
-  padding: 30px !important;
+  padding:25px !important;
     padding-left: 0px !important;
     transform: translateX(-10px) !important;
 }
@@ -163,8 +172,8 @@ body {
   border-color: #81CFE0;
 }
 #card #card__buttons a[data-social=peloton].active, #card #card__buttons a[data-social=peloton]:hover {
-  color: #ffb347 !important;
-  border-color: #ffb347;
+  color: #79BAC4 !important;
+  border-color: #79BAC4;
 }
             
 #card #card__buttons a[data-social=nielsen].active, #card #card__buttons a[data-social=nielsen]:hover {
@@ -247,6 +256,11 @@ body {
     color: white ; 
 }
 
+#top-bar__back-btn {
+  cursor: pointer;
+    color: white ; 
+}
+
 #card__tabs {
   flex: 0 0 490px;
   position: relative;
@@ -272,11 +286,12 @@ body {
   opacity: 1;
 }
 .single-tab.active .singe-tab__image {
-  transform: translateX(-400px);
+  transform: translateX(-390px);
   transition: all 0.4s cubic-bezier(0.2, 0.97, 0.39, 1) 0.7s;
     max-height: 100% !important;
-    max-width: 360px !important;
-    margin-top: -10px !important;
+    max-width: 420px !important;
+    margin-top: -57px !important;
+    
     align-content: center !important;
 }
             
@@ -335,16 +350,30 @@ body {
     
 } 
     
-            .menu a { color: #2C3E50 !important; text-decoration: none !important;}   
+            .menu a { color: black !important; text-decoration: none !important;}   
             
 .single-tab__header {
   line-height: 1;
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 400;
-  margin-bottom: 10px;
+    margin-top: 10px !important;
 }
             
+.single-tab__headerM {
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+    margin-top: -42px !important;
+}             
+span.sign {padding-top: 100px !important;
+    width: 100px !important;
+            }
+            
+            span.textsign b {padding-top:10px !important;}
+            span.textsign br {margin:1px !important;}
 span.custom1 {
   line-height: 1;
   text-transform: uppercase;
@@ -374,7 +403,7 @@ span.highlightN {
   display: flex;
   font-weight: 700;
   text-transform: capitalize;
-color: #2C3E50 !important; 
+color: #38ADF2 !important; 
             }
 
 /*main font size */            
@@ -389,7 +418,18 @@ color: #2C3E50 !important;
                 color: black !important;
             }
              .singe-tab__imageL b, strong {
-                  color: #4EB347 !important;
+                  color: #4EB347 ;
+            }
+            
+span.pelotonright b, strong {
+                  color: #79BAC4 !important;
+            }
+span.nielsenright b, strong {
+                  color: #38ADF2 !important;
+            }
+            
+span.newstoryright b, strong {
+                  color: #81CFE0 !important;
             }
             
             .singe-tab__imageR b, strong {
@@ -409,10 +449,12 @@ color: #2C3E50 !important;
     font-weight: 400 !important;
 }
 .single-tab__contentblack {
-  font-size: 1.0rem;
-  width: 60%;
-    color: #2C3E50 ;
+  font-size: .8rem !important;
+  width: 50%;
+    color: black ;
 }
+
+    
 .single-tab__content .button {
   font-size: 0.7rem;
   padding: 0.5rem;
@@ -459,7 +501,7 @@ color: #2C3E50 !important;
             
 .singe-tab__image {
   transform: translateX(0);
- max-height: 100px !important; 
+ max-height: 100% !important; 
     max-width: 250px !important;
   transition: all 0.1s;
   margin: 0;
@@ -607,8 +649,7 @@ color: #2C3E50 !important;
                      
             
 .circle-overlay.overlay-none {
-  background-color: #f9f9f9;
-    background-image: url(https://dl.dropboxusercontent.com/s/bsvx5nh6a9uz9kp/subtle-dots.png?dl=0) !important;
+  background-color: white;
 }
 .circle-overlay.overlay-about {
   background-color: #4EB347;
@@ -697,20 +738,21 @@ color: #2C3E50 !important;
    
       </div>
     <div id="tabs__tab-main" class="single-tab active" data-tab-name="main">
-      <div class="single-tab__header">
-          <div><br></div>
-          <div><br></div>
-       <span class="myblack">Roshan Selladurai</span>
-       <font color=#2C3E50>About Me</font>
+      <div class="single-tab__headerM">
+          <img src="https://dl.dropboxusercontent.com/s/lcookgek16utlre/logors.png?dl=0" alt=""/>
       </div>
-        <br>
       <div class="single-tab__contentblack">
         <p>
-          Roshan is an Indiana Hoosier with a background in consulting and finance. He is currently working as an equity analyst at Peloton. He is also a growth marketer at New Story Charity, a non-profit startup backed by Y Combinator. Roshan previously held stints in consulting, capital markets, and a human-computer interaction technology startup. In his free time he enjoys playing strategy games with friends, traveling, and reading.
+          Born in 1993 to first-generation immigrants, I was raised in Houston. Throughout my childhood, I developed a passion for bringing ideas in my head to life, from lego sets to various culinary creations to short films with friends. As my interest in math grew, I recognized a desire for quantitative challenges. I decided to attend Indiana University's Kelley School of Business to learn how business founders create value through the pursuit of their ideas, where I quickly learned that a big idea is nothing without maticulous, data-driven execution. Finding myself engrossed in evaluating company strategy, I discovered a passion for investing&mdash; a perfect blend of <a href="http://aswathdamodaran.blogspot.com/2014/06/numbers-and-narrative-modeling-story.html">numbers and narrative</a>.<br>
+            <br>
+            Currently, I focus on quantitative research at Peloton Capital Partners, and equity research at Peloton Wealth Strategists. Along with my career in finance, I've volunteered as a growth marketer at New Story Charity, a non-profit startup backed by Y Combinator, along with stints in consulting, capital markets, and a human-computer interaction technology startup. I have a strong interest in social-minded businesses driven by my personal faith and values. 
         </p>
+          <span class="textsign">
+              <b>&mdash;</b></span>
+          <span class="sign"><img src="https://dl.dropboxusercontent.com/s/871w2iz9z17zqxn/signaturesmall.png?dl=0" alt=""/></span>
       </div>
       <figure class="singe-tab__image">
-        <img src="https://dl.dropboxusercontent.com/s/qgglrjakbcnq10l/roshan%20full.png?dl=0" alt=""/>
+        <img src="https://dl.dropboxusercontent.com/s/d61xhtwvedbp3gk/roshan.png?dl=0" alt=""/>
       </figure>
         
         
@@ -787,7 +829,32 @@ color: #2C3E50 !important;
           Connecting donors to homeless families in danger to create life changing stories. Backed by Y Combinator.
           <br>
       </div>
-      <figure class="singe-tab__image">
+      <figure class="singe-tab__imageL"><span class="abouttext1">
+                <p><b></b>  </p>
+            <p></p> 
+              <p></p> 
+              <p></p> 
+              <p></p> 
+              <br>
+          <br>
+          <br>
+              <span class="newstoryright">
+                  <br></span>
+               </span> 
+      </figure>
+           <figure class="singe-tab__imageR"><span class="abouttext1">
+             <p><b></b>  </p>
+            <p></p> 
+              <p></p> 
+              <p></p> 
+              <p></p> 
+              <br>
+          <br>
+          <br>
+              <span class="newstoryright">
+               </span>
+               </span> 
+          
       </figure>
     </div>
  
@@ -815,7 +882,7 @@ color: #2C3E50 !important;
               <br>
           <br>
           <br>
-              <p><b>What I Do</b>  </p>
+              <span class="pelotonright"><p><b>What I Do</b>  </p>
             <p>Data Analysis</p> 
               <p>Strategic Analysis</p> 
               <p>Marketing</p> 
@@ -826,7 +893,7 @@ color: #2C3E50 !important;
               <p>Equity Research</p> 
               <p>MS Excel</p> 
               <p>R Studio</p>
-               <br>
+                  <br></span>
                </span> 
       </figure>
            <figure class="singe-tab__imageR"><span class="abouttext1">
@@ -838,18 +905,8 @@ color: #2C3E50 !important;
               <br>
           <br>
           <br>
-              <p><b>What I Do</b>  </p>
-            <p>Data Analysis</p> 
-              <p>Strategic Analysis</p> 
-              <p>Marketing</p> 
-              <p></p> 
-              <br>
-               <p><b>Resources I Use</b>  </p>
-            <p>YCharts</p> 
-              <p>Equity Research</p> 
-              <p>MS Excel</p> 
-              <p>R Studio</p>
-               <br>
+              <span class="pelotonright">
+               </span>
                </span> 
           
       </figure>
@@ -869,10 +926,44 @@ color: #2C3E50 !important;
           Consulting focused on using extensive data to solve complex problems.
           <br>
       </div>
-      <figure class="singe-tab__image">
+      <figure class="singe-tab__imageL"><span class="abouttext1">
+                <p><b></b>  </p>
+            <p></p> 
+              <p></p> 
+              <p></p> 
+              <p></p> 
+              <br>
+          <br>
+          <br>
+              <span class="nielsenright"><p><b>What I Did</b>  </p>
+            <p>Data Analysis</p> 
+              <p>Strategic Insights</p> 
+              <p>Category Research</p> 
+              <p></p> 
+              <br>
+               <p><b>Resources I Use</b>  </p>
+            <p>Nielsen Data</p> 
+              <p>MS Excel</p> 
+              <p>MS PowerPoint</p> 
+              <p></p>
+                  <br></span>
+               </span> 
+      </figure>
+           <figure class="singe-tab__imageR"><span class="abouttext1">
+             <p><b></b>  </p>
+            <p></p> 
+              <p></p> 
+              <p></p> 
+              <p></p> 
+              <br>
+          <br>
+          <br>
+              <span class="nielsenright">
+               </span>
+               </span> 
+          
       </figure>
     </div>
-      
       
       
   
