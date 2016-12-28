@@ -41,8 +41,10 @@ body {
   justify-content: center;
     align-items: center;
  padding-top: 0px!important ;
-  color: #f9f9f9;
-    background-image: url(https://dl.dropboxusercontent.com/s/o4s9wnsr2zchwx3/Backgrund.png?dl=0);
+  color: white;
+    background-color: white;
+    background-image:url(https://dl.dropboxusercontent.com/s/vligpua7kzk3yeu/BAKGR.png?dl=0) !important;
+    background-size: 100% ;
   background-repeat:no-repeat;
    background-size:cover;
         height: 100vh;
@@ -85,6 +87,12 @@ body {
   cursor: pointer ;
     color: white ;
 }
+#card.white #top-bar__back-btn2 {
+  opacity: 0;
+  cursor: pointer ;
+    color: white ;
+}
+
 #card.white #top-bar__lang-selector a {
   color: #BDBDBD;
   border-color: #BDBDBD;
@@ -107,6 +115,14 @@ transition-property: opacity;
   cursor: inherit;
     color: white ; 
 }
+ 
+#card #top-bar__back-btn2 {
+transition-property: opacity;
+  opacity: 1;
+  transition-duration: .35s;
+  cursor: inherit;
+    color: white ; 
+}            
             
 #card #top-bar__rslogo {
 transition-property: opacity;
@@ -738,8 +754,8 @@ span.newstoryright b, strong {
    
       </div>
     <div id="tabs__tab-main" class="single-tab active" data-tab-name="main">
-      <div class="single-tab__headerM">
-          <img src="https://dl.dropboxusercontent.com/s/lcookgek16utlre/logors.png?dl=0" alt=""/>
+      <div class="single-tab__headerM"><div id="top-bar__back-btn2">
+        <a href="index.html"> <img src="https://dl.dropboxusercontent.com/s/lcookgek16utlre/logors.png?dl=0" alt=""/></a></div>
       </div>
       <div class="single-tab__contentblack">
         <p>
@@ -760,15 +776,6 @@ span.newstoryright b, strong {
     <ul class="menu">
         <li>
         <a href="#" data-social="about" class="fa fa-user fa-lg"></a>
-      </li>
-        <li>
-          <a href="#" data-social="peloton" class="icon-pelotonpbig"></a>
-      </li>
-      <li>
-        <a href="#" data-social="behance" class="fa fa-home fa-lg"></a>
-      </li>
-         <li>
-          <a href="#" data-social="nielsen" class="icon-nielsen"></a>
       </li>
         <li>
         <a href="http://www.linkedin.com/in/roshanselladurai" data="linkedin" target="_blank" class="fa fa-linkedin fa-lg"></a>
