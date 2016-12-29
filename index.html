@@ -43,7 +43,7 @@ body {
  padding-top: 0px!important ;
   color: white;
     background-color: white;
-    background-image:url(https://dl.dropboxusercontent.com/s/ciazx700yukm2e9/backer.png?dl=0) !important;
+    background-image:url(https://dl.dropboxusercontent.com/s/l73iejhi3biqdm2/backerwhite.png?dl=0) !important;
     background-size: 100% ;
   background-repeat:no-repeat;
    background-size:cover;
@@ -133,7 +133,7 @@ transition-property: opacity;
 }            
             
 #card #card__buttons {
-  padding:25px !important;
+  padding:5px !important;
     padding-left: 0px !important;
     transform: translateX(-10px) !important;
 }
@@ -238,11 +238,22 @@ transition-property: opacity;
 #card__top-bar {
   display: flex;
   justify-content: space-between;
-  position: relative;
-  z-index: 20;
+  position: relative
   padding: 15px;
+
 }
 
+            #top-bar__back-btn {
+                
+                display: inline-block;     
+position: relative;    
+z-index: 6;
+padding-top: 20px !important;
+padding-right: 45px !important;
+margin-right: -45px !important;
+
+            }
+            
 #top-bar__lang-selector,
 #top-bar__close-btn {
   margin-left: auto;
@@ -366,7 +377,8 @@ transition-property: opacity;
     
 } 
     
-            .menu a { color: black !important; text-decoration: none !important;}   
+            .menu a { color: #2C3E50 !important; text-decoration: none !important;
+            font-size: 15px !important;}   
             
 .single-tab__header {
   line-height: 1;
@@ -381,14 +393,16 @@ transition-property: opacity;
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
     margin-top: -42px !important;
 }             
 span.sign {padding-top: 100px !important;
     width: 100px !important;
+    padding-bottom: -100px !important;
             }
             
-            span.textsign b {padding-top:10px !important;}
+            span.textsign b {padding-top:10px !important;
+            }
             span.textsign br {margin:1px !important;}
 span.custom1 {
   line-height: 1;
@@ -468,6 +482,7 @@ span.newstoryright b, strong {
   font-size: .8rem !important;
   width: 50%;
     color: black ;
+    padding-top: 40px !important;
 }
 
     
@@ -753,8 +768,8 @@ span.newstoryright b, strong {
    
       </div>
     <div id="tabs__tab-main" class="single-tab active" data-tab-name="main">
-      <div class="single-tab__headerM"><div id="top-bar__back-btn2">
-        <a href="index.html"> <img src="https://dl.dropboxusercontent.com/s/lcookgek16utlre/logors.png?dl=0" alt=""/></a></div>
+      <div class="single-tab__headerM">
+        <img src="https://dl.dropboxusercontent.com/s/lcookgek16utlre/logors.png?dl=0" alt=""/>
       </div>
       <div class="single-tab__contentblack">
         <p>
@@ -773,9 +788,6 @@ span.newstoryright b, strong {
         
         <div id="card__buttons">
     <ul class="menu">
-        <li>
-        <a href="#" data-social="about" class="fa fa-user fa-lg"></a>
-      </li>
         <li>
         <a href="http://www.linkedin.com/in/roshanselladurai" data="linkedin" target="_blank" class="fa fa-linkedin fa-lg"></a>
       </li>
