@@ -19,8 +19,11 @@
     <link rel="stylesheet" href="css/normalize.css">
 
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+       <link rel="stylesheet" href="demo-files/demo.css">
+    <link rel="stylesheet" href="style.css">
 <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/foundation/6.1.1/foundation.min.css'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300'>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800,900" rel="stylesheet">
 
         <style>
       /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
@@ -68,7 +71,11 @@ body {
   box-shadow: 0px 12px 38px rgba(44, 62, 80, 0.8);
   overflow: hidden;
 }
+   
             
+            #tabs__tab-dribbble { background-color: white !important;
+                margin-left: 0px ;
+            }
 
 #card a { color: white; }
 #card a:link { color: black; text-decoration: none;}
@@ -82,9 +89,9 @@ body {
   color: #BDBDBD !important; 
 }
 #card.white #top-bar__back-btn {
-  opacity: 1;
+  opacity: 0;
   cursor: pointer ;
-    color: white ;
+    color: black ;
 }
 #card.white #top-bar__back-btn2 {
   opacity: 0;
@@ -246,7 +253,7 @@ transition-property: opacity;
                 
                 display: inline-block;     
 position: relative;    
-z-index: 6;
+z-index: 50;
 padding-top: 20px !important;
 padding-right: 45px !important;
 margin-right: -45px !important;
@@ -376,7 +383,7 @@ margin-right: -45px !important;
     
 } 
     
-            .menu a { color: #484848 !important; text-decoration: none !important;
+            .menu a { color: #5c5c5c !important; text-decoration: none !important;
             font-size: 15px !important;}   
             
 .single-tab__header {
@@ -482,8 +489,28 @@ span.newstoryright b, strong {
 .single-tab__contentblack {
   font-size: .8rem !important;
   width: 50%;
-    color: black ;
+    color: #484848 ;
     padding-top: 30px !important;
+    margin-bottom: -5px !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.single-tab__contentTitle {
+  width: 40% !important;
+    padding-left: 0px !important;
+    margin-left: -20px ;
+    padding-top: 20px ;
+  
+}
+
+            .single-tab__contentTitle2 {
+  font-size: 3.5rem !important;
+    line-height: 50px !important;
+  width: 100%;
+    font-weight: 900 !important;
+    color: #F2A7A1 ;
+    padding-top: 0px !important;
+    text-align: left !important;
 }
 
     
@@ -731,7 +758,7 @@ span.newstoryright b, strong {
 }
 .circle-overlay.overlay-instagram {
   background-color: #3f729b;
-}
+
 .circle-overlay.overlay-snapchat {
   background-color: #fffc00;
 }
@@ -770,17 +797,21 @@ span.newstoryright b, strong {
       </div>
     <div id="tabs__tab-main" class="single-tab active" data-tab-name="main">
       <div class="single-tab__headerM">
-        <img src="https://dl.dropboxusercontent.com/s/uy109tub7vvn6zu/roshanlogored.png?dl=0" alt=""/>
+        <img src="https://dl.dropboxusercontent.com/s/g1z428xe2wnfzvr/logoname.png?dl=0" alt=""/>
+          <br>
+          <br>
+          <br>
       </div>
+         <div class="single-tab__contentTitle">
+               <img src="https://dl.dropboxusercontent.com/s/fdg2miqsutgkot4/esvc.png?dl=0" alt=""/>
+          </div>
       <div class="single-tab__contentblack">
         <p>
-          Born in 1993 to first-generation immigrants, I was raised in Houston. Throughout my childhood, I developed a passion for bringing my ideas to life, from legos to culinary creations to short films. During high school, as my interest in math grew through honors courses and math club, I recognized an interest in quantitative challenges. I decided to attend Indiana University's Kelley School of Business to learn how business founders create value through the pursuit of their ideas, which is where I quickly learned that a big idea is nothing without meticulous, data-driven execution. Finding myself engrossed in evaluating company strategy, I discovered a passion for investing&mdash; a perfect blend of numbers and narrative.<br>
+             Born in 1993 to first-generation immigrant parents, I learned that being desperate is the greatest asset. As a child, I developed a passion for bringing ideas to life, from legos to culinary creations to short films. The most important lesson I've learned is that a big idea is nothing without relentless founders who desperately need to win.
             <br>
-            Currently, I focus on quantitative research at Peloton Capital Partners, and equity research at Peloton Wealth Strategists. Along with my career in finance, I do volunteer work for New Story Charity, a non-profit startup backed by Y Combinator, and have completed stints in consulting, capital markets, and a technology startup. I have a strong interest in social-minded businesses driven by my personal faith and values. 
+            <br>
+            Currently, I work on the investment team at High Alpha Capital, serving founders building disruptive enterprise software companies. Previously completed stints at a hedge fund, consulting firm, and consumer tech startup. I have a strong interest in social-minded businesses driven by my personal faith and values. 
         </p>
-          <span class="textsign">
-              <b>&mdash;</b></span>
-          <span class="sign"><img src="https://dl.dropboxusercontent.com/s/871w2iz9z17zqxn/signaturesmall.png?dl=0" alt=""/></span>
       </div>
       <figure class="singe-tab__image">
         <img src="https://dl.dropboxusercontent.com/s/rvw9b755eeg6syw/roshanpicturere.png?dl=0" alt=""/>
@@ -789,6 +820,64 @@ span.newstoryright b, strong {
         
         <div id="card__buttons">
     <ul class="menu">
+        <li>
+        <a href="#" data-social="dribbble" class="icon-image2vector"></a>
+      </li>
+        <li>
+        <a href="http://www.linkedin.com/in/roshanselladurai" data="linkedin" target="_blank" class="fa fa-linkedin fa-lg"></a>
+      </li>
+        <li>
+        <a href="http://www.facebook.com/roshan.selladurai" data="fb" target="_blank" class="fa fa-facebook fa-lg"></a>
+      </li>
+        <li>
+        <a href="http://www.twitter.com/roshofosho456" data="twitter" target="_blank" class="fa fa-twitter fa-lg"></a>
+      </li>
+        <li>
+        <a href="http://www.instagram.com/therealrosho" data="instagram" target="_blank" class="fa fa-instagram fa-lg"></a>
+      </li>
+        <li>
+        <a href="http://www.snapchat.com/add/roshofosho456" data="snapchat" target="_blank" class="fa fa-snapchat-ghost fa-lg"></a>
+        </li>
+        <li>
+        <a href="mailto:roshan@highalpha.com" data="gmail" target="_blank" class="fa fa-envelope fa-lg"></a>
+      </li>
+    </ul>
+        
+        
+      </div> </div>
+      
+       <div id="tabs__tab-dribbble" class="single-tab" data-tab-name="dribbble">
+     <div class="single-tab__headerM">
+        <img src="https://dl.dropboxusercontent.com/s/vtbxsdhg4wvjlaj/back.png?dl=0" alt=""/>
+          <br>
+          <br>
+          <br>
+      </div>
+         <div class="single-tab__contentTitle">
+               <img src="https://dl.dropboxusercontent.com/s/q7ngjh0biwuau68/hac%20logo.png?dl=0" alt=""/>
+          </div>
+      <div class="single-tab__contentblack">
+        <p>
+             High Alpha Capital is an early stage investor that backs companies building disruptive enterprise cloud software. We invests in both High Alpha Studio companies and outside entrepreneurs. Our team brings an experienced SaaS operating voice and has built a unique platform to help our portfolio grow and scale.
+            <br>
+            <br>
+            High Alpha Studio conceives, launches and scales next generation enterprises by providing a blend of services including: product development, sales and marketing, finance, brand and design, and talent development. The combination of High Alpha Studio and Capital represents a new model for entrepreneurship that seeks to help companies reduce friction, increase velocity, and achieve enterprise scale.
+
+
+        </p>
+      </div>
+      <figure class="singe-tab__image">
+          <br>
+          <br>
+        <img src="https://dl.dropboxusercontent.com/s/h7lxe5t89vm8fkh/logosforweb.png?dl=0" alt=""/>
+      </figure>
+        
+        
+        <div id="card__buttons">
+    <ul class="menu">
+        <li>
+        <a href="#" data-social="dribbble" class="fa fa-user fa-lg"></a>
+      </li>
         <li>
         <a href="http://www.linkedin.com/in/roshanselladurai" data="linkedin" target="_blank" class="fa fa-linkedin fa-lg"></a>
       </li>
@@ -811,26 +900,27 @@ span.newstoryright b, strong {
         
         
       </div> </div>
-
-     
-      <div id="tabs__tab-dribbble" class="single-tab" data-tab-name="dribbble">
-     <div class="single-tab__header">
-        <div><br></div>
-           <div><br></div>
-          <div><br></div>
-       <span class="my">Peloton Wealth Strategists</span>
-       Growth Marketer
+      
+      
+<div id="tabs__tab-dribbble2" class="single-tab" data-tab-name="dribbble2">
+     <div class="single-tab__headerM">
+        <img src="https://dl.dropboxusercontent.com/s/vtbxsdhg4wvjlaj/back.png?dl=0" alt=""/>
       </div>
-          <br>
-      <div class="single-tab__content">
+         <div class="single-tab__contentTitle">
+               <img src="https://dl.dropboxusercontent.com/s/q7ngjh0biwuau68/hac%20logo.png?dl=0" alt=""/>
+          </div>
+      <div class="single-tab__contentblack">
         <p>
-          Connecting donors to homeless families in danger to create life changing stories.
+             Born in 1993 to first-generation immigrant parents, I learned that being desperate is the greatest asset. As a child, I developed a passion for bringing ideas to life, from legos to culinary creations to short films. The most important lesson I've learned is that a big idea is nothing without relentless founders who desperately need to win.
+            <br>
+            <br>
+            Currently, I work on the investment team at High Alpha Capital, serving founders building disruptive enterprise software companies. Previously completed stints at a hedge fund, consulting firm, and consumer tech startup. I have a strong interest in social-minded businesses driven by my personal faith and values. 
         </p>
-          <p>
-          Backed by Y Combinator</p>
-        <a href="http://www.newstorycharity.org/" target="_blank" class="button hollow">Learn More</a>
       </div>
-      </div>
+      <figure class="singe-tab__image">
+        <img src="https://dl.dropboxusercontent.com/s/5bonyit4xmj12mg/ha%20capital%20deals.png?dl=0" alt=""/>
+      </figure> </div>
+  
       
    
       
