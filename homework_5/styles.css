@@ -1,0 +1,250 @@
+/* homepage and body */
+body {
+  font-family: nocturne-serif, serif;
+  font-weight: 400;
+  background-color: #FFFCF1;
+  height: 100%;
+  padding-top: 150px;
+}
+
+body.home {
+  background-image: url("images/background.png");
+}
+
+.container1-homepage {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  margin-top: 200px;
+  width: 40%;
+  font-family: nocturne-serif, serif;
+  font-weight: bold;
+  font-size: 46px;
+}
+
+.buttons-home {
+  background-color: #EF5D52;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 52px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Gothic A1', sans-serif; 
+  cursor: pointer;
+}
+
+.ImageContainer {
+  display: flex;
+  float: right;
+  width: 40%;
+  margin-top: -300px;
+  margin-right: -100px;
+}
+
+.ImageContainer img {  
+  max-width: 65%;  
+  height: auto;  
+}  
+
+/* the navigation bar */
+.logo img{
+  max-height: 54px;
+    
+}
+#homepagenav {
+  background-color: transparent;
+}
+
+.navbar {
+  background-color: #FFFCF1; 
+  position: fixed;
+  top: 40px; 
+  width: 100%;
+  margin-top: 0px;
+}
+
+.navbar ul {
+  position: relative; left:-20px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: nocturne-serif, serif;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 2.5;
+  text-decoration: none;
+}
+
+.navbar ul {
+    padding-left: 1100px;
+}
+
+/* Change underline on mouse-over */
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+
+.banner {
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #849779;
+    text-align: center;
+    line-height: 2.5;
+    overflow: hidden; 
+    color: white;
+    font-family: 'Gothic A1', sans-serif; 
+    font-weight: bolder;
+    font-size: 24;   
+}
+
+
+/* Products Page */
+
+.filter-products {
+    display: grid;
+    grid-template-columns: 300px 600px;
+    grid-template-rows: auto auto;
+    margin-top: 20px;
+    grid-gap: 250px;
+}
+
+.filter-section {
+    display: grid;
+    grid-template-columns: minmax(290px, 1fr) minmax(290px, 1fr) minmax(290px, 1fr);
+    justify-content: center;
+    margin-top: 50px;
+   
+}
+
+.category-filter {
+    margin-bottom: 0px;
+}
+
+.product-listings {
+    display: grid;
+    grid-template-columns: minmax(290px, 1fr) minmax(290px, 1fr) minmax(290px, 1fr);
+    justify-content: center;
+    margin-top: 50px;
+    grid-gap: 70px;
+}
+
+.product-tile {
+    margin-bottom: 30px;
+    font-family: 'Gothic A1', sans-serif; 
+    font-weight: bolder;
+    font-size: 24;
+}
+
+/* Products Detail Page */
+
+.shopping-tabs {
+    padding-left: 25px;
+}
+.images-and-details {
+    display: grid;
+    grid-template-columns: 500px 750px;
+    grid-template-rows: auto auto;
+    grid-gap: 70px;
+}
+
+.product-details {
+    display: grid;
+    grid-template-columns: minmax(490px, 1fr);
+    grid-row-gap: 10px;
+    padding-left: 100px;
+    width: auto;
+}
+
+.product-name-and-price{
+    display: grid;
+    grid-template-columns: 300px 200px;
+    grid-template-rows: auto auto;
+    grid-gap: 200px;
+    font-family: 'Gothic A1', sans-serif; 
+    font-weight: bold;
+    font-size: 38px;
+    height: 80px;
+}
+
+.product-details-name {
+    font-family: 'Gothic A1', sans-serif; 
+    font-weight: 900;
+    font-size: 38px;
+    height: 100px;
+}
+
+.product-details-expand {
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-row-gap: 5px;
+    font-family: 'Gothic A1', sans-serif; 
+    font-weight: medium;
+    font-size: 18px;
+    margin-top: -30px;
+}
+
+.selection:hover {
+  text-decoration: underline;
+}
+    
+.product-description {
+    font-family: 'Gothic A1', sans-serif; 
+    font-weight: medium;
+    font-size: 18px;
+}
+
+.product-details-review {
+    font-family: 'Gothic A1', sans-serif; 
+    font-weight: medium;
+    font-size: 18px;
+
+}
+
+.image-section {
+    padding-left: 25px
+    
+}
+
+.image-section img {
+max-width: 500px;  
+height: auto; 
+}
+.product-details-add {
+    display: grid;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: auto auto;
+    grid-gap: 40px;
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.product-details-add img {
+    max-height: 50px;  
+}
+
+.button-product-inactive {
+  background-color: #EF5D52;
+  opacity: 50%;
+  border: none;
+  color: white;
+  padding: 10px 20px 0px 20px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: 'Gothic A1', sans-serif; 
+  font-weight: bold;
+  cursor: pointer;
+}
