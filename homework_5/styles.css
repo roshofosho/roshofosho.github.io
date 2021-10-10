@@ -112,7 +112,11 @@ body.home {
 
 /* Products Page */
 
-.filter-products {
+.tabs-heading {
+    display: grid;
+    width: 100%;
+}
+.filter-and-products {
     display: grid;
     grid-template-columns: 300px 600px;
     grid-template-rows: auto auto;
@@ -126,6 +130,14 @@ body.home {
     justify-content: center;
     margin-top: 50px;
    
+}
+
+.products-heading {
+    padding-left: 20px;
+}
+
+.product-filter {
+    padding-left: 20px;
 }
 
 .category-filter {
