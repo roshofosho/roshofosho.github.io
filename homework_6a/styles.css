@@ -345,3 +345,80 @@ body.home {
   font-weight: bold;
   cursor: pointer;
 }
+
+
+/* Shopping Cart Page */
+
+.shop_logo {
+  position: fixed;
+  z-index: 1;
+  top: 60px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  line-height: 2.5;
+  overflow: hidden; 
+}
+.shop_logo img{
+  max-width: 350px;
+}
+
+.progress {
+  display: grid;
+  grid-template-columns: 85px 285px 70px 285px 70px;
+  grid-column-gap: 0px;
+  margin-top: 10px;
+  font-family: 'Gothic A1', sans-serif; 
+  font-weight: 500;
+  font-size: 18px;
+  justify-content: center;
+  width: 100%;
+}
+
+.shipping {
+  align-content: center;
+  margin: auto;
+}
+
+.billing {
+  align-content: center;
+  margin: auto;
+}
+
+.review {
+  align-content: center;
+  margin: auto;
+}
+
+hr {
+  border: none;
+  height: 1.5px;
+  color: #000000;
+  background-color: #000000;
+}
+
+.address_and_summary{
+  display: grid;
+  grid-template-columns: 650px 400px;
+  grid-column-gap: 100px;
+  margin-top: 20px;
+  font-family: 'Gothic A1', sans-serif; 
+  font-weight: 500;
+  font-size: 18px;
+  justify-content: center;
+  width: 100%;
+}
+
+.address {
+    background-color: #BCBA9E;
+    width: 650px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 16%;
+}
+
+.summary {
+    background-color: white;
+    width: 400px;;
+    height: 500px;
+}
