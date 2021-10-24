@@ -9,6 +9,9 @@
     <!-- link to CSS stylesheet -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="shortcut icon" href="favicon.ico" />
+ 
+    <!-- link to Javascript -->
+    <script type="text/javascript" src=main.js></script>
       
     <!-- link to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,11 +45,9 @@
           <a href="#contact">Contact</a>
           <div class="cart-button">
               <div class="cart-icon">
-                <a href="#shop"><i class="fas fa-shopping-bag"></i></a>
+                <a href="#shop"><i class="fas fa-shopping-cart"></i></a>
               </div>
-              <div class="cart-count">
-                0
-              </div>
+                <input class="cart-count" id="number" value="0"/>
           </div>
         </div>
       </nav>
@@ -63,7 +64,7 @@
         <!-- Filter Section -->
           <div class = "image-section">
             <a href="product-details.html">
-              <img src="images/product_details_photo.png" alt="Dog Harness 1">
+              <img id="productphoto" src="images/product_details_photo.png" alt="Dog Harness 1">
             </a>
           </div>
                   
@@ -90,36 +91,36 @@
               </div>
                 
               <div class ="product-details-color">
-                <h3>Select Color:</h3>
+                <div class ="select-color-title">
+                    <h3>Select Color:<h3 class="color-chosen" id="color"></h3></h3>    
+                </div>
                   <div class ="color-selection">
-                    <div class ="strawberry">Strawberry
-                    </div>
-                    <div class ="blackberry">Blackberry
-                    </div>
-                    <div class ="cranberry">Cranberry
-                    </div>
-                    <div class ="fire">Fire Orange
-                    </div>
+                    <button class ="strawberry" type="button" onclick="displayStrawberry(); changeImageStraw()">Strawberry</button>
+                    <button class ="blackberry" type="button" onclick="displayBlackberry(); changeImageBlack()">Blackberry</button>
+                    <button class ="cranberry" type="button" onclick="displayCranberry(); changeImageCran()">Cranberry</button>
+                    <button class ="fire-orange" type="button" onclick="displayFireOrange(); changeImageFire()">Fire Orange</button>
                   </div>
               </div>
                 
               <div class ="product-details-size">
-                <h3>Select Size:</h3>
+                <div class ="select-size-title">
+                    <h3>Select Size:<h3 class="size-chosen" id="size"></h3></h3>    
+                </div>
                   <div class ="size-selection">
-                    <div class ="tiny">Tiny
-                    </div>
-                    <div class ="small">Small
-                    </div>
-                    <div class ="medium">Medium
-                    </div>
-                    <div class ="large">Large
-                    </div>
+                    <button class ="tiny" type="button" onclick="displayTiny()">Tiny</button>
+                    <button class ="small" type="button" onclick="displaySmall()">Small</button>
+                    <button class ="medium" type="button" onclick="displayMedium()">Medium</button>
+                    <button class ="large" type="button" onclick="displayLarge()">Large</button>
                   </div>
               </div>
                 
               <div class ="product-details-add">
-                <img src="images/quantity_box_gray.png" alt="Select quantity">
-                <a class="button-product-inactive">Add to Cart</a>
+                <div class ="quantity-button">
+                  <input id="subtract" type="button" onclick="decreaseValue()" value="-" />
+                  <input id="quant" value="0"/>
+                  <input id="add" type="button" onclick="incrementQuantValue()" value="+" />
+                </div>
+                <input class="button-product-inactive" type="button" onclick="incrementCartValue();displayCounter()" value="Add to Cart" />
               </div> 
                     
             </div>

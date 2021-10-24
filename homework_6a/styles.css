@@ -119,19 +119,26 @@ body.home {
 /* cart icon in nav */
 
 .cart-count {
+  opacity: 0;
   position: fixed;
-  right: 35px;
-  top: 85px;
-  background: #EF5D52;
+  right: 30px;
+  top: 80px;
   padding: 0 5px;
-  border-radius: 30%;
+  background: #EF5D52;
+  width: 8px;
+  border-radius: 10px;
+  border-color: transparent;
   color: white;
-  font-size: 14px;
+  align-content: center;
+}
+
+.cart-count a {
+  font-size: 10px;
   font-family: 'Gothic A1', sans-serif; 
 }
 
 .cart-icon a {
-  font-size: 20px;
+  font-size: 22px;
   position: fixed;
   top: 64px;
   right: 25px;
@@ -238,6 +245,22 @@ body.home {
   width: auto;
 }
 
+.select-color-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: grid;
+  grid-template-columns: 20% 50%;
+  grid-column-gap: 10px;
+}
+
+.select-size-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: grid;
+  grid-template-columns: 18% 50%;
+  grid-column-gap: 12px;
+}
+
 .product-name-and-price{
   display: grid;
   grid-template-columns: 300px 200px;
@@ -282,11 +305,40 @@ body.home {
 .color-selection {
   display: grid;
   grid-template-columns: 150px 150px 150px 150px;
+  margin-left: -30px;
 }
 
 .size-selection {
   display: grid;
   grid-template-columns: 120px 120px 120px 120px;
+  margin-left: -43px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 18px;
+}
+
+.quantity-button input {
+  background-color: transparent;
+  border-color: black;
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 18px;
+}
+
+#quant {
+  border-left: none;
+  border-right: none;
+}
+
+#add {
+  border-left: none;
+}
+
+#subtract {
+  border-right: none;
 }
 
 .strawberry:hover {
@@ -349,13 +401,19 @@ body.home {
   font-weight: 500;
 }
 
+.quantity-button {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+#quant {
+  text-align: center;
+}
 .product-details-add img {
   max-height: 50px;  
 }
 
 .button-product-inactive {
   background-color: #EF5D52;
-  opacity: 50%;
   border: none;
   color: white;
   padding: 10px 20px 0px 20px;
@@ -367,6 +425,7 @@ body.home {
   font-weight: bold;
   cursor: pointer;
 }
+
 
 
 /* Shopping Cart Page */
@@ -437,6 +496,16 @@ hr {
   height: 500px;
   display: grid;
   grid-template-rows: 16%;
+  font-size: 15px;
+  font-family: 'Gothic A1', sans-serif; 
+  padding-left: 20px;
+}
+
+.address_title {
+  font-size: 20px;
+  font-family: 'Gothic A1', sans-serif; 
+  font-weight: 700;
+  padding-top: 20px;
 }
 
 .summary {
@@ -449,4 +518,98 @@ hr {
   display: grid;
   grid-template-columns: 40% 40%;
   grid-column-gap: 100px;
+}
+
+.location{
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-column-gap: 100px;
+}
+
+.location2{
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-column-gap: 100px;
+}
+
+.button-cart-continue {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px 0px 20px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 610px;
+  font-size: 20px;
+  font-family: 'Gothic A1', sans-serif; 
+  cursor: pointer;
+}
+
+.continue_button {
+  width: 610px;
+}
+
+#firstname {
+  width: 250px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+  color: rgb(0,0,0,.5);
+}
+
+#lastname {
+  width: 250px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+  color: rgb(0,0,0,.5);
+}
+
+#address1 {
+  width: 610px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+  color: rgb(0,0,0,.5);
+}
+
+#address2 {
+  width: 610px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+  color: rgb(0,0,0,.5);
+}
+
+#country {
+  width: 250px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+  color: rgb(0,0,0,.5);
+}
+
+#city {
+  width: 250px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+  color: rgb(0,0,0,.5);
+}
+
+#state {
+  width: 250px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+  color: rgb(0,0,0,.5);
+}
+
+#zip {
+  width: 250px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+  color: rgb(0,0,0,.5);
 }
