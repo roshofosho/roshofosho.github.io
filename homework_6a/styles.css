@@ -116,6 +116,28 @@ body.home {
   color: white;
 }
 
+/* cart icon in nav */
+
+.cart-count {
+  position: fixed;
+  right: 35px;
+  top: 85px;
+  background: #EF5D52;
+  padding: 0 5px;
+  border-radius: 30%;
+  color: white;
+  font-size: 14px;
+  font-family: 'Gothic A1', sans-serif; 
+}
+
+.cart-icon a {
+  font-size: 20px;
+  position: fixed;
+  top: 64px;
+  right: 25px;
+}
+
+
 /* Products Page */
 .tabs-heading {
   display: grid;
@@ -410,15 +432,21 @@ hr {
 }
 
 .address {
-    background-color: #BCBA9E;
-    width: 650px;
-    height: 500px;
-    display: grid;
-    grid-template-rows: 16%;
+  background-color: #BCBA9E;
+  width: 650px;
+  height: 500px;
+  display: grid;
+  grid-template-rows: 16%;
 }
 
 .summary {
-    background-color: white;
-    width: 400px;;
-    height: 500px;
+  background-color: white;
+  width: 400px;;
+  height: 500px;
+}
+
+.name{
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-column-gap: 100px;
 }
