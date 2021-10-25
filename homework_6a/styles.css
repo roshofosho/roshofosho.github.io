@@ -628,3 +628,62 @@ hr {
   font-family: 'Gothic A1', sans-serif;
   color: rgb(0,0,0,.5);
 }
+
+.productsordered {
+  padding-top: 50px;
+}
+.productsordered img{
+  width: 240px;
+  height: 108px;
+}
+
+.order_title {
+  font-size: 20px;
+  font-family: 'Gothic A1', sans-serif; 
+  font-weight: 700;
+  padding-top: 18px;
+}
+
+.ordersummary {
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+  width: 450px;
+  height: 496px;
+  display: grid;
+  grid-template-rows: 30px 400px 100px;
+  padding-left: 20px;
+}
+
+.totalsum {
+  display: grid;
+  grid-template-columns: 12% 80% 20%;
+  padding-top: 20px
+}
+
+.totalheading {
+  font-size: 26px;
+  font-family: 'Gothic A1', sans-serif;   
+}
+
+.shiphandle {
+  font-size: 12px;
+  font-family: 'Gothic A1', sans-serif; 
+  padding-top: 9px;
+  color: #656565;
+}
+
+.totalprice {
+  position: relative;
+  left: -96px;
+  font-size: 26px;
+  font-family: 'Gothic A1', sans-serif;
+}
+.totalsum hr {
+  height: 1px;
+  color: #000000;
+  background-color: #000000;
+  width: 420px;
+  position: relative;
+  top: -27px;
+}
