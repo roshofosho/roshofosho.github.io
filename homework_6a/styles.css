@@ -326,6 +326,9 @@ button {
   border-color: black;
   font-family: 'Gothic A1', sans-serif;
   font-size: 18px;
+}
+
+#quantbtn {
   opacity: 0.5;
 }
 
@@ -425,10 +428,11 @@ button {
   font-family: 'Gothic A1', sans-serif; 
   font-weight: bold;
   cursor: pointer;
-  opacity: 0.5;
 }
 
-
+#addtocartbtn {
+  opacity: 0.5;
+}
 
 /* Shopping Cart Page */
 

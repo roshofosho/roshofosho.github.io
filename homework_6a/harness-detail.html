@@ -24,6 +24,12 @@
     
     <!-- link to Adobe Fonts -->
       <link rel="stylesheet" href="https://use.typekit.net/oph8tid.css">
+      
+    <!-- credit for photos -->
+    <!-- Dominik Kempf, https://unsplash.com/photos/NuQnmaax29c -->
+    <!-- Dane Deaner, https://unsplash.com/photos/n8JbWAB9Ypw -->
+    <!-- Nima Naseri, https://unsplash.com/photos/prB3NJqJ-2o -->
+    <!-- Yang Miao, https://unsplash.com/photos/kkV0GaMDpN8 -->
   </head>
 
 <!-- Body -->
@@ -107,22 +113,21 @@
                     <h3>Select Size:<h3 class="size-chosen" id="size"></h3></h3>    
                 </div>
                   <div class ="size-selection">
-                    <button class ="tiny" type="button" onclick="displayTiny()">Tiny</button>
-                    <button class ="small" type="button" onclick="displaySmall()">Small</button>
-                    <button class ="medium" type="button" onclick="displayMedium()">Medium</button>
-                    <button class ="large" type="button" onclick="displayLarge()">Large</button>
+                    <button class ="tiny" type="button" onclick="displayTiny(); activateButtons()">Tiny</button>
+                    <button class ="small" type="button" onclick="displaySmall(); activateButtons()">Small</button>
+                    <button class ="medium" type="button" onclick="displayMedium(); activateButtons()">Medium</button>
+                    <button class ="large" type="button" onclick="displayLarge(); activateButtons()">Large</button>
                   </div>
               </div>
                 
               <div class ="product-details-add">
-                <div class ="quantity-button">
+                <div class ="quantity-button" id="quantbtn">
                   <input id="subtract" type="button" onclick="decreaseValue()" value="-" />
                   <input id="quant" value="0"/>
                   <input id="add" type="button" onclick="incrementQuantValue()" value="+" />
                 </div>
-                <input class="button-product-inactive" type="button" onclick="incrementCartValue();displayCounter()" value="Add to Cart" />
-              </div> 
-                    
+                <input class="button-product-inactive" id="addtocartbtn" type="button" onclick="incrementCartValue();displayCounter()" value="Add to Cart" />
+              </div>     
             </div>
           </div>
       </div>
