@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Muddy Paw's Adventure Gear" />
+    <title>Muddy Paw's Adventure Gear</title>
+    
+    <!-- link to CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+ 
+    <!-- link to Javascript -->
+    <script src=main.js></script>
+      
+    <!-- link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/glh0rlq.css">
+  
+    <!-- link to FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/faa6752bed.js" crossorigin="anonymous"></script>
+    
+    <!-- link to Adobe Fonts -->
+      <link rel="stylesheet" href="https://use.typekit.net/oph8tid.css">
+      
+    <!-- credit for photos -->
+    <!-- Dominik Kempf, https://unsplash.com/photos/NuQnmaax29c -->
+    <!-- Dane Deaner, https://unsplash.com/photos/n8JbWAB9Ypw -->
+    <!-- Nima Naseri, https://unsplash.com/photos/prB3NJqJ-2o -->
+    <!-- Yang Miao, https://unsplash.com/photos/kkV0GaMDpN8 -->
+  </head>
+
+<!-- Body -->
+  <body> 
+      
+    <!-- discount banner -->
+      <div class="banner">
+        <a href="products.html">50% Off All Products</a>
+      </div>
+        
+    <!-- navigation -->
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="Assets/images/logobig.png" alt="Muddy Paws Adventure Gear logo">
+        </a>
+        <div class ="navbar-pages">
+          <a href="products.html">Shop</a>
+          <a href="#news">About</a>
+          <a href="#contact">Contact</a>
+          <div class="cart-button">
+              <div class="cart-icon">
+                <a href="shoppingcart.html"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+                <input class="cart-count" id="number" value="0"/>
+          </div>
+        </div>
+      </nav>
+        
+    <!-- shopping page tabs -->
+      <p class ="shopping-tabs"> 
+        <a href ="index.html">
+          Home</a> > <a href ="products.html">Shop</a> > <a href ="harness-detail.html">Harness</a>
+      </p>
+            
+    <!-- Filter and Products -->
+      <div class ="images-and-details">
+      
+        <!-- Filter Section -->
+          <div class = "image-section">
+            <a href="product-details.html">
+              <img id="productphoto" src="Assets/images/product_details_photo.png" alt="Dog Harness 1">
+            </a>
+          </div>
+                  
+        <!-- Product Grid -->
+          <div class ="product-details">
+            <div class ="product-name-and-price">
+              <div class ="product-details-name">
+                Dog Harness
+                <div class ="product-details-review">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"> </i> 10 Reviews
+                </div>
+              </div>
+              <div class ="product-details-price">
+                <div class ="initial-price">$50
+                </div>
+                <div class ="discount-price">$25
+                </div>
+              </div>   
+            </div> 
+              
+            <div class = "product-details-expand">
+              <div class ="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus dictum varius lorem urna risus netus nam. Tellus enim etiam quam scelerisque nibh egestas scelerisque.
+              </div>
+                
+              <div class ="product-details-color">
+                <div class ="select-color-title">
+                    <h3 class="color-chosen" id="color">Select Color:</h3>    
+                </div>
+                  <div class ="color-selection">
+                    <button class ="strawberry" type="button" onclick="displayStrawberry(); changeImageStraw()">Strawberry</button>
+                    <button class ="blackberry" type="button" onclick="displayBlackberry(); changeImageBlack()">Blackberry</button>
+                    <button class ="cranberry" type="button" onclick="displayCranberry(); changeImageCran()">Cranberry</button>
+                    <button class ="fire-orange" type="button" onclick="displayFireOrange(); changeImageFire()">Fire Orange</button>
+                  </div>
+              </div>
+                
+              <div class ="product-details-size">
+                <div class ="select-size-title">
+                    <h3 class="size-chosen" id="size">Select Size:</h3>    
+                </div>
+                  <div class ="size-selection">
+                    <button class ="tiny" type="button" onclick="displayTiny(); activateButtons()">Tiny</button>
+                    <button class ="small" type="button" onclick="displaySmall(); activateButtons()">Small</button>
+                    <button class ="medium" type="button" onclick="displayMedium(); activateButtons()">Medium</button>
+                    <button class ="large" type="button" onclick="displayLarge(); activateButtons()">Large</button>
+                  </div>
+              </div>
+                
+              <div class ="product-details-add">
+                <div class ="quantity-button" id="quantbtn">
+                  <input id="subtract" type="button" onclick="decreaseValue()" value="-" />
+                  <input id="quant" value="1"/>
+                  <input id="add" type="button" onclick="incrementQuantValue()" value="+" />
+                </div>
+                <input class="button-product-inactive" id="addtocartbtn" type="button" onclick="incrementCartValue();displayCounter()" value="Add to Cart" />
+              </div>     
+            </div>
+          </div>
+      </div>
+
+</body>
+</html>

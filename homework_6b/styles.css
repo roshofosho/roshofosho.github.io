@@ -1,0 +1,689 @@
+/* homepage and body */
+body {
+  font-family: nocturne-serif, serif;
+  font-weight: 400;
+  background-color: #FFFCF1;
+  height: 100%;
+  padding-top: 150px;
+}
+
+body.home {
+  background-image: url("Assets/images/background.png");
+}
+
+.container1-homepage {
+  display: flex;
+  justify-content: center; 
+  margin-left: 100px;
+  margin-top: 200px;
+  width: 40%;
+  text-align: center;
+  font-family: nocturne-serif, serif;
+  font-weight: bold;
+  font-size: 46px;
+}
+
+.buttons-home {
+  background-color: #EF5D52;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 52px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Gothic A1', sans-serif; 
+  cursor: pointer;
+}
+
+.ImageContainer {
+  display: flex;
+  float: right;
+  width: 40%;
+  margin-top: -300px;
+  margin-right: -100px;
+}
+
+.ImageContainer img {  
+  max-width: 65%;  
+  height: auto;  
+}  
+
+/* navigation bar */
+.logo img{
+  max-height: 54px;  
+}
+
+#homepagenav {
+  background-color: transparent;
+}
+
+.navbar {
+  background-color: #FFFCF1; 
+  position: fixed;
+  top: 40px; 
+  width: 100%;
+  margin-top: 0px;
+}
+
+.navbar-pages {
+  position: relative; 
+  left:800px;
+  top: 30px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: nocturne-serif, serif;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 2.5;
+  text-decoration: none;
+}
+
+.navbar ul {
+  padding-left: 1100px;
+}
+
+/* Change underline on mouse-over */
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.banner {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #849779;
+  text-align: center;
+  line-height: 2.5;
+  overflow: hidden; 
+  color: white;
+  font-family: 'Gothic A1', sans-serif; 
+  font-weight: bolder;
+  font-size: 18px; 
+}
+
+.banner a {
+  text-decoration: none;
+  color: white;
+}
+
+/* cart icon in nav */
+
+.cart-count {
+  opacity: 0;
+  position: fixed;
+  right: 30px;
+  top: 80px;
+  padding: 0 5px;
+  background: #EF5D52;
+  width: 8px;
+  border-radius: 10px;
+  border-color: transparent;
+  color: white;
+  align-content: center;
+}
+
+.cart-count a {
+  font-size: 10px;
+  font-family: 'Gothic A1', sans-serif; 
+}
+
+.cart-icon a {
+  font-size: 22px;
+  position: fixed;
+  top: 64px;
+  right: 25px;
+}
+
+
+/* Products Page */
+.tabs-heading {
+  display: grid;
+  width: 100%;
+}
+
+.filter-and-products {
+  display: grid;
+  grid-template-columns: 300px 600px;
+  grid-template-rows: auto auto;
+  margin-top: 20px;
+  grid-gap: 250px;
+}
+
+.fa-square {
+  margin-right: 15px;
+}
+
+.filter-section {
+  display: grid;
+  grid-template-columns: minmax(290px, 1fr) minmax(290px, 1fr) minmax(290px, 1fr);
+  justify-content: center;
+  margin-top: 50px;  
+}
+
+.products-heading {
+  padding-left: 20px;
+}
+
+.product-filter {
+  padding-left: 20px;
+}
+
+.category-filter {
+  margin-bottom: 0px;
+}
+
+.product-listings {
+  display: grid;
+  grid-template-columns: minmax(290px, 1fr) minmax(290px, 1fr) minmax(290px, 1fr);
+  justify-content: center;
+  margin-top: 60px;
+  grid-gap: 70px;
+  grid-row-gap: 10px;
+}
+
+.product-listings img {
+  width: 256px;
+}
+
+.name-and-price {
+  display: grid;
+  grid-template-columns: 75% 13% 10%;
+  width: 256px;
+}
+
+.itemprice-old {
+  text-decoration: line-through;
+}
+
+.itemprice-new {
+  color: #EF5D52;
+}
+
+.product-tile {
+  margin-bottom: 30px;
+  font-family: 'Gothic A1', sans-serif; 
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+/* Harness-Detail and Wateraddopn Page */
+.shopping-tabs {
+  padding-left: 25px;
+  font-family: 'Gothic A1', sans-serif; 
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;   
+}
+
+.shopping-tabs a {
+  text-decoration: none;
+  color: black;
+}
+
+.images-and-details {
+  display: grid;
+  grid-template-columns: 500px 750px;
+  grid-template-rows: auto auto;
+  grid-gap: 70px;
+}
+
+.product-details {
+  display: grid;
+  grid-template-columns: minmax(490px, 1fr);
+  grid-row-gap: 10px;
+  padding-left: 100px;
+  width: auto;
+}
+
+.select-color-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: grid;
+  grid-template-columns: 20% 50%;
+  grid-column-gap: 10px;
+}
+
+.select-size-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: grid;
+  grid-template-columns: 18% 50%;
+  grid-column-gap: 12px;
+}
+
+.product-name-and-price{
+  display: grid;
+  grid-template-columns: 300px 200px;
+  grid-template-rows: auto auto;
+  grid-gap: 200px;
+  font-family: 'Gothic A1', sans-serif; 
+  font-weight: bold;
+  font-size: 38px;
+  height: 80px;
+}
+
+.product-details-name {
+  font-family: 'Gothic A1', sans-serif; 
+  font-weight: 900;
+  font-size: 38px;
+  height: 100px;
+}
+
+.product-details-price {
+  display: grid;
+  grid-template-columns: 50% 50%;  
+}
+
+.initial-price {
+  text-decoration: line-through;
+}
+
+.discount-price {
+  color: #EF5D52;
+  font-weight: bolder;   
+}
+
+.product-details-expand {
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-row-gap: 5px;
+  font-family: 'Gothic A1', sans-serif; 
+  font-size: 18px;
+  margin-top: -30px;
+}
+
+.color-selection {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  margin-left: -30px;
+}
+
+.size-selection {
+  display: grid;
+  grid-template-columns: 120px 120px 120px 120px;
+  margin-left: -43px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 18px;
+}
+
+.quantity-button input {
+  background-color: transparent;
+  border-color: black;
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 18px;
+}
+
+#quantbtn {
+  opacity: 0.5;
+}
+
+#quant {
+  border-left: none;
+  border-right: none;
+}
+
+#add {
+  border-left: none;
+}
+
+#subtract {
+  border-right: none;
+}
+
+.strawberry:hover {
+  text-decoration: underline;
+}
+
+.blackberry:hover {
+  text-decoration: underline;
+}
+
+.cranberry:hover {
+  text-decoration: underline;
+}
+
+.fire:hover {
+  text-decoration: underline;
+}
+
+.tiny:hover {
+  text-decoration: underline;
+}
+
+.small:hover {
+  text-decoration: underline;
+}
+
+.medium:hover {
+  text-decoration: underline;
+}
+
+.large:hover {
+  text-decoration: underline;
+}
+    
+.product-description {
+  font-family: 'Gothic A1', sans-serif; 
+  font-size: 18px;
+}
+
+.product-details-review {
+  font-family: 'Gothic A1', sans-serif; 
+  font-size: 18px;
+}
+
+.image-section {
+  padding-left: 25px
+}
+
+.image-section img {
+  max-width: 500px;  
+  height: auto; 
+}
+
+.product-details-add {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: auto auto;
+  grid-gap: 40px;
+  margin-top: 40px;
+  font-weight: 500;
+}
+
+.quantity-button {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+#quant {
+  text-align: center;
+}
+.product-details-add img {
+  max-height: 50px;  
+}
+
+.button-product-inactive {
+  background-color: #EF5D52;
+  border: none;
+  color: white;
+  padding: 10px 20px 0px 20px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: 'Gothic A1', sans-serif; 
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#addtocartbtn {
+  opacity: 0.5;
+}
+
+/* Shopping Cart Page */
+
+.shop_logo {
+  position: fixed;
+  z-index: 1;
+  top: 60px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  line-height: 2.5;
+  overflow: hidden; 
+}
+.shop_logo img{
+  max-width: 350px;
+}
+
+.progress {
+  display: grid;
+  grid-template-columns: 85px 285px 70px 285px 70px;
+  grid-column-gap: 0px;
+  margin-top: 10px;
+  font-family: 'Gothic A1', sans-serif; 
+  font-weight: 500;
+  font-size: 18px;
+  justify-content: center;
+  width: 100%;
+}
+
+.shipping {
+  align-content: center;
+  margin: auto;
+}
+
+.billing {
+  align-content: center;
+  margin: auto;
+}
+
+.review {
+  align-content: center;
+  margin: auto;
+}
+
+hr {
+  border: none;
+  height: 1.5px;
+  color: #000000;
+  background-color: #000000;
+}
+
+.address_and_summary{
+  display: grid;
+  grid-template-columns: 650px 400px;
+  grid-column-gap: 100px;
+  margin-top: 20px;
+  font-family: 'Gothic A1', sans-serif; 
+  font-weight: 500;
+  font-size: 18px;
+  justify-content: center;
+  width: 100%;
+}
+
+.address {
+  background-color: #BCBA9E;
+  width: 650px;
+  height: 500px;
+  display: grid;
+  grid-template-rows: 16%;
+  font-size: 15px;
+  font-family: 'Gothic A1', sans-serif; 
+  padding-left: 20px;
+}
+
+.ordersummary {
+  position: fixed;
+  left: 850px;
+}
+.ordersummary img{
+  height: 500px;  
+}
+
+.address_title {
+  font-size: 20px;
+  font-family: 'Gothic A1', sans-serif; 
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.summary {
+  background-color: white;
+  width: 400px;;
+  height: 500px;
+}
+
+.name{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 5px;
+}
+
+.location{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 5px;
+}
+
+.location2{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 5px;
+}
+
+.button-cart-continue {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px 0px 20px;
+  height: 30px;
+  display: grid;
+  text-align: center;
+  text-decoration: none;
+  width: 580px;
+  font-size: 20px;
+  font-family: 'Gothic A1', sans-serif; 
+  cursor: pointer;
+}
+
+.continue_button {
+  width: 100%;
+}
+
+#firstname {
+  width: 280px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+  color: rgb(0,0,0,.5);
+}
+
+#lastname {
+  width: 280px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+  color: rgb(0,0,0,.5);
+}
+
+#address1 {
+  width: 610px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+  color: rgb(0,0,0,.5);
+}
+
+#address2 {
+  width: 610px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+  color: rgb(0,0,0,.5);
+}
+
+#country {
+  width: 280px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+  color: rgb(0,0,0,.5);
+}
+
+#city {
+  width: 280px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+  color: rgb(0,0,0,.5);
+}
+
+#state {
+  width: 280px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+  color: rgb(0,0,0,.5);
+}
+
+#zip {
+  width: 280px;
+  height: 30px;
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+  color: rgb(0,0,0,.5);
+}
+
+.productsordered {
+  padding-top: 50px;
+}
+.productsordered img{
+  width: 240px;
+  height: 108px;
+}
+
+.order_title {
+  font-size: 20px;
+  font-family: 'Gothic A1', sans-serif; 
+  font-weight: 700;
+  padding-top: 18px;
+}
+
+.ordersummary {
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+  width: 450px;
+  height: 496px;
+  display: grid;
+  grid-template-rows: 30px 400px 100px;
+  padding-left: 20px;
+}
+
+.totalsum {
+  display: grid;
+  grid-template-columns: 12% 80% 20%;
+  padding-top: 20px
+}
+
+.totalheading {
+  font-size: 26px;
+  font-family: 'Gothic A1', sans-serif;   
+}
+
+.shiphandle {
+  font-size: 12px;
+  font-family: 'Gothic A1', sans-serif; 
+  padding-top: 9px;
+  color: #656565;
+}
+
+.totalprice {
+  position: relative;
+  left: -96px;
+  font-size: 26px;
+  font-family: 'Gothic A1', sans-serif;
+}
+.totalsum hr {
+  height: 1px;
+  color: #000000;
+  background-color: #000000;
+  width: 420px;
+  position: relative;
+  top: -27px;
+}
