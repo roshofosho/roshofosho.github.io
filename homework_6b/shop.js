@@ -43,8 +43,9 @@ function addItem() {
   var colorValue = document.getElementById("color").innerHTML;
   var quantityValue = document.getElementById("quant").value;
   var itemSize = document.getElementById("size").innerHTML;
+  var itemPrice = parseInt(document.getElementById("item-price").innerHTML)
   // create json object based on selected values
-  var itemObject = {color: colorValue, quantity: quantityValue, size: itemSize};
+  var itemObject = {color: colorValue, quantity: quantityValue, size: itemSize, price: itemPrice};
   // add this newly selected item to the cart
   cartItems.push(itemObject)
   // save the new value of the list
@@ -74,7 +75,7 @@ function updatePage() {
       for (var i = 0; i < cartItems.length; i++) {
         var cartItem = cartItems[i]
         var itemNode = document.createElement("li")
-        itemNode.innerText = cartItem.color + " " + cartItem.quantity + " " + cartItem.size 
+        itemNode.innerText = cartItem.color + " " + cartItem.quantity + " " + cartItem.size + " " + cartItem.price
         
         // we have to get the cartItem eagerly, but return a function that executes lazily
         itemNode.onclick = (function (cartItem) {
@@ -82,13 +83,6 @@ function updatePage() {
             removeItem(cartItem)
           }
          }(cartItem))
-        
-        // itemNode.onclick = removeItem(cartItem) // this is wrong because the computer eagerly evaluates removeItem function and does not attach the function to the onclick listner
-        
-        // this won't work because it is too lazy - it checks what the value of cartItem is when the button is clicked. the side effect is that the last element always gets removed no matter what you click on
-        // itemNode.onclick = function() {
-        //   removeItem(cartItem)
-        // }
         
         cartList.appendChild(itemNode)
       }

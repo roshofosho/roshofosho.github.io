@@ -13,6 +13,7 @@
     <!-- link to Javascript -->
     <script type="text/javascript" src=main.js></script>
     <script type="text/javascript" src=shop.js></script>
+    <script type="text/javascript" src=cartItems.js></script>
     
       
     <!-- link to Google Fonts -->
@@ -29,7 +30,7 @@
   </head>
 
 <!-- Body -->
-  <body>
+  <body onload = "createCart();">
 
     <!-- top logo -->
       <div class="shop_logo">
@@ -117,24 +118,21 @@
           <div class="order_title">Order Summary (<span id="cart-number">0</span>)</div>
   <!-- stuff -->       
         <div id = "product-card">
-          <div id="cart-list">
-          </div>
+          <template>
           <div class="productsordered">
-            <img src="Assets/images/dogharness1.png" alt="Product 1 in cart">
           </div>
           <div class="product-details">
             <div class="product-specs">
-              <div class="spec-name">Dog Harness</div>
+              <div class="spec-name"></div>
               <div class="spec-color-size">
-                <div class="spec-colo">Strawberry;</div>
-                <div class="spec-size">Tiny</div>
+                <div class="spec-color"></div>
+                <div class="spec-size"></div>
+                <div class="spec-quantity"></div>
+                <div class="spec-price"></div>
               </div>
-              <div class="spec-price">$25</div>
             </div>
           </div>
-          <div class="remove-wish">
-            <div class="remove">remove</div>
-          </div>
+          </template>
         </div> 
           <div class="totalsum">
             <div class="totalheading">
@@ -142,7 +140,6 @@
             </div>
             <div class="shiphandle">
               -before shipping and handling
-                                <input class="button-product-inactive" id="addtocartbtn" type="button" onclick="updatePage()" value="Add to Cart" />
             </div>
             <div class="totalprice">
               $25

@@ -1,3 +1,4 @@
+//use javascript to get products from local storage to the cart page
 function createCart() {
     const cartContent = JSON.parse(window.localStorage.getItem('cartItems'));
 
@@ -16,7 +17,7 @@ function createCart() {
             productDetailsDiv.classList.add("product-details");
 
             const cartItemImage = document.createElement("img");
-            cartItemImage.src = "Assets/images/dogharness1.png"; //example since image source is not stored in localStorage rn
+            cartItemImage.src = "Assets/images/dogharness1.png"; 
 
             const productSpecsDiv = document.createElement("div");
             productSpecsDiv.classList.add("product-specs");
@@ -25,12 +26,11 @@ function createCart() {
             specNameDiv.classList.add("spec-name"); 
             specNameDiv.innerHTML = "Dog Harness"
             
-
             const specColorSizeDiv = document.createElement("div");
             specColorSizeDiv.classList.add("spec-color-size");
 
             const specColorDiv = document.createElement("div");
-            specColorDiv.classList.add("spec-colo");
+            specColorDiv.classList.add("spec-color");
             specColorDiv.innerHTML = item.color;
 
             const specSizeDiv = document.createElement("div");
@@ -43,15 +43,16 @@ function createCart() {
 
             const specPriceDiv = document.createElement("div");
             specPriceDiv.classList.add("spec-price");
-            specPriceDiv.innerHTML = "$25";
+            specPriceDiv.innerHTML = item.price;
 
             specColorSizeDiv.appendChild(specColorDiv);
             specColorSizeDiv.appendChild(specSizeDiv);
             specColorSizeDiv.appendChild(specQuantityDiv);
+            specColorSizeDiv.appendChild(specPriceDiv);
             
             productSpecsDiv.appendChild(specNameDiv);
             productSpecsDiv.appendChild(specColorSizeDiv);
-            productSpecsDiv.appendChild(specPriceDiv);
+            
 
             productsOrderedDiv.appendChild(cartItemImage);
 
