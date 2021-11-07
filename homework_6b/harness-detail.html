@@ -12,6 +12,8 @@
  
     <!-- link to Javascript -->
     <script src=main.js></script>
+    <script type="text/javascript" src=shop.js></script>
+      
       
     <!-- link to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -126,7 +128,7 @@
                   <input id="quant" value="1"/>
                   <input id="add" type="button" onclick="incrementQuantValue()" value="+" />
                 </div>
-                <input class="button-product-inactive" id="addtocartbtn" type="button" onclick="incrementCartValue();displayCounter()" value="Add to Cart" />
+                <input class="button-product-inactive" id="addtocartbtn" type="button" onclick="incrementCartValue();displayCounter();addButton()" value="Add to Cart" />
               </div>     
             </div>
           </div>
