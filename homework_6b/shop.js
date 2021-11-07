@@ -59,8 +59,8 @@ function updatePage() {
   if (cartItemsString !== null) {
     var cartItems = JSON.parse(cartItemsString) // converting stored string to object
     // update the cart # element
-    var counterNode = document.getElementById("number");
-    counterNode.innerText = cartItems.length
+    var counterNode = document.getElementById("number").value;
+    counterNode = cartItems.length
     // for every item in our cart, create a new list item under cart-list
     var cartList = document.getElementById("cart-list")
     cartList.innerHTML = ""
