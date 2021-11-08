@@ -1,21 +1,23 @@
 //Adds the number of items to the cart icon//
 function incrementCartValue() {
-  var quantity = parseInt(document.getElementById('quant').value);
-  var value = parseInt(document.getElementById('number').value, 10);
+ // var quantity = parseInt(document.getElementById('quant').value);
+ // var value = parseInt(document.getElementById('number').value, 10);
   
-  if(quantity >0) {
-    value = value + quantity;
-  } else {
-      value === value;
-  }
+ //if(quantity >0) {
+ //value = value + quantity;
+ // } else {
+ //     value === value;
+ // }
   
-  document.getElementById('number').value = value; 
+  const cartContent = JSON.parse(window.localStorage.getItem('cartItems'));
+    
+  document.getElementById('number').value = cartContent.length + 1; 
 
-  if(value >0) {
+  //if(value >0) {
     document.getElementById("number").style.opacity = "1.0";
-  } else {
-    document.getElementById("number").style.opacity = "0.0";
-  }
+  // } else {
+  //   document.getElementById("number").style.opacity = "0.0";
+  // }
     
 }
 

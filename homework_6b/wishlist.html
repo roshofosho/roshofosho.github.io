@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Muddy Paw's Adventure Gear" />
+    <title>Shopping Cart</title>
+    
+    <!-- link to CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- link to Javascript -->
+    <script type="text/javascript" src=main.js></script>
+    <script type="text/javascript" src=shop.js></script>
+    <script type="text/javascript" src=cartItems.js></script>
+    
+      
+    <!-- link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/glh0rlq.css">
+  
+    <!-- link to FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/faa6752bed.js" crossorigin="anonymous"></script>
+    
+    <!-- link to Adobe Fonts -->
+      <link rel="stylesheet" href="https://use.typekit.net/oph8tid.css">
+  </head>
+
+<!-- Body -->
+  <body onload = "createCart();">
+
+    <!-- top logo -->
+      <div class="shop_logo">
+        <a href="index.html" class="logo">
+          <img src="Assets/images/shopping_logo.png" alt="Muddy Paws Adventure Gear logo">
+        </a>
+      </div>
+      
+    <!-- progress bar -->
+      <div class="progress">
+        <div class="shipping">
+          Shipping
+        </div>
+        <div class="line1">
+          <hr>
+        </div>
+        <div class="billing">
+          Billing
+        </div>
+        <div class="line2">
+          <hr>
+        </div>
+        <div class="review">
+        Review
+        </div>
+      </div>
+
+    <!-- adress and summary sections -->
+      <div class="address_and_summary">
+        <div class="address">
+          <div class="address_title">
+            Shipping Address
+          </div>
+          <div class="name">
+            <div class="first">
+            ex. John 
+            <br>
+            <input type="text" id="firstname" value="First Name"/>
+            </div>
+            <div class="first">
+            ex. Doe
+            <br>
+            <input type="text" id="lastname" value="Last Name"/>
+            </div>
+          </div>
+          <div class="address1">
+            ex. 1234 Street Avenue
+            <br>
+            <input type="text" id="address1" value="Address Line 1"/>
+          </div>
+          <div class="address2">
+            ex. Unit #123
+            <br>
+            <input type="text" id="address2" value="Address Line 2"/>
+          </div>
+          <div class="location">
+            <div class="country">
+            ex. USA 
+            <br>
+            <input type="text" id="country" value="Country"/>
+            </div>
+            <div class="city">
+            ex. Pittsburgh
+            <br>
+            <input type="text" id="city" value="City"/>
+            </div>
+          </div>
+          <div class="location2">
+            <div class="state">
+            ex. PA 
+            <br>
+            <input type="text" id="state" value="State"/>
+            </div>
+            <div class="zip">
+            ex. 15219
+            <br>
+            <input type="text" id="zip" value="Zip"/>
+            </div>
+          </div>
+          <div class="continue_button">
+            <a class="button-cart-continue">Continue to Billing Information</a>
+          </div>
+        </div>
+        <div class="ordersummary">
+          <div class="order_title">Order Summary (<span id="cart-number">0</span>)</div>
+  <!-- cart products -->       
+        <div id = "product-card">
+          <template>
+          <div class="productsordered">
+          </div>
+          <div class="product-details">
+            <div class="product-specs">
+              <div class="name-remove">
+                <div class="spec-name"></div>
+                <div class="remove"></div>
+              </div>
+              <div class="spec-color-size">
+                <div class="spec-color"></div>
+                <div class="spec-size"></div>
+                <div class="spec-quantity"></div>
+                <div class="spec-price"></div>
+              </div>
+            </div>
+          </div>
+          </template>
+        </div> 
+          <div class="totalsum">
+            <div class="totalheading">
+              Total
+            </div>
+            <div class="shiphandle">
+              -before shipping and handling
+            </div>
+            <div id ="totalprice">
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>
