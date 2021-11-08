@@ -646,32 +646,56 @@ hr {
 
 .product-specs {
   display: grid;
-  grid-template-rows: 25px 28px;
+  grid-template-rows: 25px 25px 25px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  position: relative;
+  left: -10px;
 }
 
 .spec-color-size {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
-  grid-row-gap: 0px;
+  grid-row-gap: 10px;
   color: #797979;
   font-size: 11px;
+}
+
+.remove {
+  position: relative;
+  left: 280px;
+  top: -19px;
+  font-size: 12px;
+}
+
+.spec-price {
+  display: grid;
+  grid-template-columns: 7px 50%;
 }
 
 
 .spec-name {
   font-size: 15px;
 }
-.remove {
-  font-size: 15px;
-  padding-top: 25px;
-}
+
+
 #product-card {
   display: grid;
-  grid-template-columns: 5px 10px 5px;
+  grid-template-columns: 0px 5px 5px;
+  grid-template-rows: 120px;
   grid-column-gap: 0px;
+  grid-row-gap: 0px;
+    overflow: scroll;
     
+}
+
+#product-card img {
+    width: 90px;
+    height: 90px; 
+    object-fit: scale-down;
+    position: relative;
+    left:-5px;
+      
 }
 
 .order_title {
@@ -694,7 +718,7 @@ hr {
 
 .totalsum {
   display: grid;
-  grid-template-columns: 12% 80% 20%;
+  grid-template-columns: 12% 65% 20%;
   padding-top: 20px
 }
 
@@ -712,7 +736,7 @@ hr {
 
 .totalprice {
   position: relative;
-  left: -96px;
+  left: -36px;
   font-size: 26px;
   font-family: 'Gothic A1', sans-serif;
 }

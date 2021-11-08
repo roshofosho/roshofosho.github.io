@@ -1,32 +1,5 @@
-
-
-
-
-
-
-
+// source: 
 // function that removes a particular item (obj) from the shopping cart
-function removeItem(obj) {
-  // retrieve the stored value of the cart items so that we can modify it
-  var cartItemsString = localStorage.getItem("cartItems")
-  if (cartItemsString !== null) {
-    var cartItems = JSON.parse(cartItemsString) // successfully loaded in the cart items
-    
-    // find the index of the input object in the list
-    var ind = cartItems.findIndex(function (item) {
-      return item.glaze === obj.glaze && item.quantity === obj.quantity
-    })
-    console.log("ind " + ind)
-    if (ind !== -1) {
-      // remove item from the list
-      cartItems.splice(ind, 1)
-      // update the stored value
-      localStorage.setItem("cartItems", JSON.stringify(cartItems))
-      // re-render the page to reflect changes
-      updatePage()
-    }
-  }
-}
 
 // ad the currently selected product to the local storage data
 function addItem() {
@@ -43,11 +16,14 @@ function addItem() {
   var colorValue = document.getElementById("color").innerHTML;
   var quantityValue = document.getElementById("quant").value;
   var itemSize = document.getElementById("size").innerHTML;
-  var itemPrice = parseInt(document.getElementById("item-price").innerHTML)
+  var itemPrice = document.getElementById("item-price").innerHTML;
+  var itemName = document.getElementById("product-spec-name").innerHTML;
+  var itemImage = document.getElementById("productphoto").src;
+  
   // create json object based on selected values
-  var itemObject = {color: colorValue, quantity: quantityValue, size: itemSize, price: itemPrice};
+  var itemObject = {color: colorValue, quantity: quantityValue, size: itemSize, price: itemPrice, name: itemName, image: itemImage};
   // add this newly selected item to the cart
-  cartItems.push(itemObject)
+  cartItems.push(itemObject);
   // save the new value of the list
   localStorage.setItem("cartItems", JSON.stringify(cartItems))
 }
@@ -75,10 +51,9 @@ function updatePage() {
       for (var i = 0; i < cartItems.length; i++) {
         var cartItem = cartItems[i]
         var itemNode = document.createElement("li")
-        itemNode.innerText = cartItem.color + " " + cartItem.quantity + " " + cartItem.size + " " + cartItem.price
+        itemNode.innerText = cartItem.color + " " + cartItem.quantity + " " + cartItem.size + " " + cartItem.price;
         
-        // we have to get the cartItem eagerly, but return a function that executes lazily
-        itemNode.onclick = (function (cartItem) {
+        document.getElementsByClassName("remove").onclick = (function (cartItem) {
           return function() {
             removeItem(cartItem)
           }
@@ -94,3 +69,4 @@ function addButton() {
   addItem()
   updatePage()
 }
+
