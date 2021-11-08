@@ -5,7 +5,7 @@ function createCart() {
     const cartParentDiv = document.getElementById("product-card");
 
     if(cartContent) {
-        cartContent.forEach((item, index) => {
+        cartContent.forEach((item) => {
 
             const cartListDiv = document.createElement("div");
             cartListDiv.setAttribute("id", "cart-list");
@@ -28,10 +28,6 @@ function createCart() {
             
             const removeDiv = document.createElement('div');
             removeDiv.classList.add("remove");
-            removeDiv.onclick = function() {
-                // console.log(index);
-                //removeItem(index);
-            };
             removeDiv.innerHTML = "Remove";
             
             const specColorSizeDiv = document.createElement("div");
@@ -63,7 +59,6 @@ function createCart() {
             
             productSpecsDiv.appendChild(nameRemoveDiv);
             productSpecsDiv.appendChild(specColorSizeDiv);
-            
 
             productsOrderedDiv.appendChild(cartItemImage);
 
@@ -71,16 +66,35 @@ function createCart() {
             
             nameRemoveDiv.appendChild(specNameDiv);
             nameRemoveDiv.appendChild(removeDiv);
-            
-
 
             cartParentDiv.appendChild(cartListDiv);
             cartParentDiv.appendChild(productsOrderedDiv)
             cartParentDiv.appendChild(productDetailsDiv);
 
+            removeDiv.addEventListener("click", function() {
+                //remove product from page
+                cartListDiv.remove();
+
+                //find index of the item 
+                const index = cartContent.findIndex(function(cartItem) {
+                    if (cartItem == item) {
+                        return true;
+                    }
+                });
+                 //remove product from localStorage
+                cartContent.splice(index, 1);
+
+                window.localStorage.setItem("cartItems", JSON.stringify(cartContent));
+
+                //reload page to reflect changed cart
+                var pageReload = setInterval(function(){
+                        location.reload();}, 20);
+                updatePage();
+            });
 
         });
     }
+
     function removeItem(index) {
   // retrieve the stored value of the cart items so that we can modify it
         var cartItemsString = localStorage.getItem("cartItems")
