@@ -21,7 +21,7 @@
   //   document.getElementById("number").style.opacity = "0.0";
   // }
     
-}//
+//}
 
 //Adds the quantity box on the product details page//
 function incrementQuantValue() {
