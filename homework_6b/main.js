@@ -1,5 +1,5 @@
 //Adds the number of items to the cart icon//
-//function incrementCartValue() {
+function incrementCartValue() {
  // var quantity = parseInt(document.getElementById('quant').value);
  // var value = parseInt(document.getElementById('number').value, 10);
   
@@ -11,9 +11,7 @@
   
   const cartContent = JSON.parse(window.localStorage.getItem('cartItems'));
    
-  if (cartContent) {  
   document.getElementById('number').value = cartContent.length + 1; 
-  }
 
   //if(value >0) {
     document.getElementById("number").style.opacity = "1.0";
@@ -21,7 +19,7 @@
   //   document.getElementById("number").style.opacity = "0.0";
   // }
     
-//}
+}
 
 //Adds the quantity box on the product details page//
 function incrementQuantValue() {
