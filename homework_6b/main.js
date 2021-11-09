@@ -11,7 +11,7 @@ function incrementCartValue() {
   
   const cartContent = JSON.parse(window.localStorage.getItem('cartItems'));
    
-  document.getElementById('number').value = cartContent.length + 1; 
+  document.getElementById('number').value = cartContent.length; 
 
   //if(value >0) {
     document.getElementById("number").style.opacity = "1.0";
