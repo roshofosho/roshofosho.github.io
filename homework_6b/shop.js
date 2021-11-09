@@ -1,4 +1,4 @@
-// source: 
+// source: https://codepen.io/arkanecow/pen/mdMpJxr
 // function that removes a particular item (obj) from the shopping cart
 
 // ad the currently selected product to the local storage data
