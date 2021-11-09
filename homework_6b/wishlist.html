@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Muddy Paw's Adventure Gear" />
-    <title>Shopping Cart</title>
+    <title>Wish List</title>
     
     <!-- link to CSS stylesheet -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -30,7 +30,7 @@
   </head>
 
 <!-- Body -->
-  <body onload = "createCart();">
+  <body onload = "createWish();">
 
     <!-- top logo -->
       <div class="shop_logo">
@@ -38,116 +38,32 @@
           <img src="Assets/images/shopping_logo.png" alt="Muddy Paws Adventure Gear logo">
         </a>
       </div>
-      
-    <!-- progress bar -->
-      <div class="progress">
-        <div class="shipping">
-          Shipping
-        </div>
-        <div class="line1">
-          <hr>
-        </div>
-        <div class="billing">
-          Billing
-        </div>
-        <div class="line2">
-          <hr>
-        </div>
-        <div class="review">
-        Review
-        </div>
-      </div>
 
-    <!-- adress and summary sections -->
-      <div class="address_and_summary">
-        <div class="address">
-          <div class="address_title">
-            Shipping Address
-          </div>
-          <div class="name">
-            <div class="first">
-            ex. John 
-            <br>
-            <input type="text" id="firstname" value="First Name"/>
-            </div>
-            <div class="first">
-            ex. Doe
-            <br>
-            <input type="text" id="lastname" value="Last Name"/>
-            </div>
-          </div>
-          <div class="address1">
-            ex. 1234 Street Avenue
-            <br>
-            <input type="text" id="address1" value="Address Line 1"/>
-          </div>
-          <div class="address2">
-            ex. Unit #123
-            <br>
-            <input type="text" id="address2" value="Address Line 2"/>
-          </div>
-          <div class="location">
-            <div class="country">
-            ex. USA 
-            <br>
-            <input type="text" id="country" value="Country"/>
-            </div>
-            <div class="city">
-            ex. Pittsburgh
-            <br>
-            <input type="text" id="city" value="City"/>
-            </div>
-          </div>
-          <div class="location2">
-            <div class="state">
-            ex. PA 
-            <br>
-            <input type="text" id="state" value="State"/>
-            </div>
-            <div class="zip">
-            ex. 15219
-            <br>
-            <input type="text" id="zip" value="Zip"/>
-            </div>
-          </div>
-          <div class="continue_button">
-            <a class="button-cart-continue">Continue to Billing Information</a>
-          </div>
-        </div>
-        <div class="ordersummary">
-          <div class="order_title">Order Summary (<span id="cart-number">0</span>)</div>
+    <!-- wishlist sections -->
+      <div class="wishlist">
+        <div class="wishlistsummary">
+          <div class="order_title">Wish List (<span id="cart-number">0</span>)</div>
   <!-- cart products -->       
-        <div id = "product-card">
+        <div id = "wish-card">
           <template>
-          <div class="productsordered">
+          <div class="wishlist">
           </div>
-          <div class="product-details">
-            <div class="product-specs">
-              <div class="name-remove">
-                <div class="spec-name"></div>
-                <div class="remove"></div>
+          <div class="wish-details">
+            <div class="wish-specs">
+              <div class="wish-name-remove">
+                <div class="wish-name"></div>
+                <div class="wish-remove"></div>
               </div>
-              <div class="spec-color-size">
-                <div class="spec-color"></div>
-                <div class="spec-size"></div>
-                <div class="spec-quantity"></div>
-                <div class="spec-price"></div>
+              <div class="wish-spec-color-size">
+                <div class="wish-spec-color"></div>
+                <div class="wish-spec-size"></div>
+                <div class="wish-spec-quantity"></div>
+                <div class="wish-spec-price"></div>
               </div>
             </div>
           </div>
           </template>
         </div> 
-          <div class="totalsum">
-            <div class="totalheading">
-              Total
-            </div>
-            <div class="shiphandle">
-              -before shipping and handling
-            </div>
-            <div id ="totalprice">
-            </div>
-            <hr>
-          </div>
         </div>
       </div>
 

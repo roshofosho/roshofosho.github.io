@@ -21,6 +21,9 @@
     
     <!-- link to Adobe Fonts -->
       <link rel="stylesheet" href="https://use.typekit.net/oph8tid.css">
+      
+    <link href="./owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="./owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
   </head>
 
 <!-- Body -->
@@ -53,9 +56,35 @@
     <div class="tabs-heading">
       <p class ="shopping-tabs"> <a href ="index.html">Home</a> > Shop
       </p>
-      <h1 class="products-heading">
-        Our Products
-      </h1>
+    <div class="topgrid">
+        <div class="topgriditem i-1">
+          <h1 class="products-heading">
+            Our Products
+          </h1>
+        </div>
+        <div class="topgriditem i-2" id="center-carousel">
+            <div class="loop owl-carousel carousel-home">
+                <div class="item" id="item1">
+                    <img src="Assets/images/dogharness1.png" alt="Dog Harness 1">
+                </div>
+                <div class="item" id="item2">
+                    <img src="Assets/images/dogharness2pic.png" alt="Dog Harness 2">
+                </div>
+                <div class="item" id="item3">
+                    <img src="Assets/images/collarforspin.png" alt="Dog GPS Collar">
+                </div>
+                <div class="item" id="item4">
+                    <img src="Assets/images/catforspin.png" alt="Cat Harness 1">
+                </div>
+                <div class="item" id="item5">
+                    <img src="Assets/images/catharness2.png" alt="Dog Harness 2">
+                </div>
+                <div class="item" id="item6">
+                    <img src="Assets/images/catbackpackspin.png" alt="Cat Backpack">
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
             
   <!-- Filter and Products -->
@@ -123,7 +152,7 @@
         </div>
           
         <div class = "product-tile">
-          <a href="products.html">
+          <a href="harness2-detail.html">
             <img src="Assets/images/dogharness2.png" alt="Dog Harness 2">
           </a>
           <div class ="name-and-price">
@@ -140,7 +169,7 @@
         </div> 
                     
         <div class = "product-tile">
-          <a href="products.html">
+          <a href="dog-gps-collar.html">
             <img src="Assets/images/doggps.png" alt="Dog GPS Collar">
           </a>
           <div class ="name-and-price">
@@ -157,7 +186,7 @@
         </div> 
                     
         <div class = "product-tile">
-          <a href="products.html">
+          <a href="cat-harness1.html">
             <img src="Assets/images/catharness1.png" alt="Cat Harness 1">
           </a>
           <div class ="name-and-price">
@@ -174,7 +203,7 @@
         </div> 
     
         <div class = "product-tile">
-          <a href="products.html">
+          <a href="cat-harness2.html">
             <img src="Assets/images/catharness2.png" alt="Cat Harness 2">
           </a>
           <div class ="name-and-price">
@@ -191,7 +220,7 @@
         </div> 
                     
         <div class = "product-tile">
-          <a href="products.html">
+          <a href="cat-backpack.html">
             <img src="Assets/images/catbag.png" alt="Cat Backpack">
           </a>
           <div class ="name-and-price">
@@ -208,7 +237,7 @@
         </div> 
                     
         <div class = "product-tile">
-          <a href="products.html">
+          <a href="cat-gpscollar.html">
             <img src="Assets/images/catgpspng.png" alt="Cat GPS Collar">
           </a>
           <div class ="name-and-price">
@@ -225,7 +254,7 @@
         </div> 
                     
         <div class = "product-tile">
-          <a href="products.html">
+          <a href="foodaddon.html">
             <img src="Assets/images/foodattachment.png" alt="Food Add-on Attachment">
           </a>
           <div class ="name-and-price">
@@ -260,4 +289,7 @@
       </div>
     </div>
   </body>
+<script src="./jquery.js"></script>
+<script src="./owlcarousel/owl.carousel.min.js"></script>
+<script src="main.js" type="text/javascript"></script> <!-- Linking JavaScript -->
 </html>
