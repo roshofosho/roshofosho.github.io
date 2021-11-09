@@ -13,12 +13,8 @@ function incrementCartValue() {
    
   document.getElementById('number').value = cartContent.length; 
 
-  //if(value >0) {
-    document.getElementById("number").style.opacity = "1.0";
-  // } else {
-  //   document.getElementById("number").style.opacity = "0.0";
-  // }
-    
+  document.getElementById("number").style.opacity = "1.0";
+ 
 }
 
 //Adds the quantity box on the product details page//
