@@ -1,5 +1,5 @@
 //Adds the number of items to the cart icon//
-function incrementCartValue() {
+//function incrementCartValue() {
  // var quantity = parseInt(document.getElementById('quant').value);
  // var value = parseInt(document.getElementById('number').value, 10);
   
@@ -21,7 +21,7 @@ function incrementCartValue() {
   //   document.getElementById("number").style.opacity = "0.0";
   // }
     
-}
+}//
 
 //Adds the quantity box on the product details page//
 function incrementQuantValue() {
