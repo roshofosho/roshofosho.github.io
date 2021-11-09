@@ -10,8 +10,10 @@ function incrementCartValue() {
  // }
   
   const cartContent = JSON.parse(window.localStorage.getItem('cartItems'));
-    
+   
+  if (cartContent) {  
   document.getElementById('number').value = cartContent.length + 1; 
+  }
 
   //if(value >0) {
     document.getElementById("number").style.opacity = "1.0";
