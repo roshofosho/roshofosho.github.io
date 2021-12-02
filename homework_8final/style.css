@@ -97,13 +97,13 @@ nav {
     left: 0;
     height: 2px;
     background: var(--bs-light);
-    transition: all .3s ease;
+    transition: all .6s ease;
 }
 
 #features .feature-text > div {
     opacity: 0;
     visibility: hidden;
-    transition: all .3s ease;
+    transition: all .6s ease;
 }
 
 #features .feature-text > div.active {
@@ -114,7 +114,7 @@ nav {
 #features .images-feature img {
     opacity: 0;
     visibility: hidden;
-    transition: all .3s ease;
+    transition: all .6s ease;
 }
 
 #features .images-feature img.active {
@@ -123,13 +123,18 @@ nav {
 }
 
 #features .gap-4 {
-    gap: 15% !important;
+    gap: 5% !important;
 }
 
+#features_section {
+    padding-top: 0rem !important;
+}
 @media screen and (min-width: 800px) {
     .features_container {
         padding-left: 35.3%;
-
+    }
+    #features .gap-4 {
+        gap: 15% !important;
     }
 }
 

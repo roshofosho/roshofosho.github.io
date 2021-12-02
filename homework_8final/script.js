@@ -1,29 +1,4 @@
-// const imageWrapper = document.querySelector('.images-feature');
-
-// const arrHeight = allImage.map(item=> {
-//   return item.offsetHeight;
-// })
-
-// const largeHeight = Math.max(...arrHeight);
-
-// imageWrapper.style.height = largeHeight + 'px';
-
-// window.addEventListener('resize', function () {
-//   const allImage = Array.from(document.querySelectorAll('.images-feature img'));
-//   const imageWrapper = document.querySelector('.images-feature');
-
-//   const arrHeight = allImage.map(item=> {
-//     return item.offsetHeight;
-//   })
-
-//   const largeHeight = Math.max(...arrHeight);
-
-//   imageWrapper.style.height = largeHeight + 'px';
-// })
-
-
-
-
+// javscript that creates animation on features section //
 const allFeatureLink = document.querySelectorAll('.feature-link span:not(.line)');
 const allFeatureText = document.querySelectorAll('.feature-text > div');
 const allImage = Array.from(document.querySelectorAll('.images-feature img'));
