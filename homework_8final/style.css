@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --header-bg: #faf8f4;
+    --blue-bg: #5368e7;
+}
+
+.btn {
+    white-space: nowrap;
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+.fs-7 {
+    font-size: .875rem;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+
+
+
+
+/* NAVBAR */
+header,
+nav {
+    background: var(--header-bg) !important;
+}
+
+.app-store-download {
+    height: 4em;
+}
+
+.navbar-brand img {
+    height: 2rem;
+}
+
+/* NAVBAR */
+
+
+/* MAIN PAGE */
+
+#main_form {
+    width: 420px !important;
+    align-content: center;
+    margin: auto;
+}
+
+#main_description {
+    width: 380px !important;
+    align-content: center;
+    margin: auto;   
+}
+
+
+/* FEATURES */
+#features {
+    background-image: url(assets/message_background.png);
+    background-repeat: repeat; 
+}
+
+#features .container {
+    margin: auto;
+    align-content: center;
+}
+
+#features img {
+    max-width: 65%;
+}
+
+#features .feature-link {
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+#features .feature-link::-webkit-scrollbar {
+    display: none;
+}
+
+#features .feature-link span {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--bs-light);
+    white-space: nowrap;
+}
+
+#features .feature-link .line {
+    left: 0;
+    height: 2px;
+    background: var(--bs-light);
+    transition: all .3s ease;
+}
+
+#features .feature-text > div {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+
+#features .feature-text > div.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#features .images-feature img {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+
+#features .images-feature img.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#features .gap-4 {
+    gap: 15% !important;
+}
+
+@media screen and (min-width: 800px) {
+    .features_container {
+        padding-left: 35.3%;
+
+    }
+}
+
+/* FEATURES */
+
+
+
+
+
+/* SEND LINK */
+#send-link {
+    background-color: #4B62E6;
+}
+
+#send-link .img-bottom-logo-white {
+	max-width: 300px;
+	width: 100%;
+}
+/* SEND LINK */
+
+
+
+
+
+/* BREAKPOINTS */
+@media (min-width: 576px) {
+    .form-features {
+        max-width: 75% !important;
+    }
+    
+    .form-send-link {
+    	max-width: 50% !important;
+    }
+    #features .images-feature img {
+        width: 75% !important;
+    }
+}
+/* BREAKPOINTS */
