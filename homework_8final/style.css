@@ -61,6 +61,33 @@ nav {
     margin: auto;   
 }
 
+#main_text{
+    align-content: center;
+    margin: auto; 
+}
+
+#download_response1 {
+    color: black;
+    display: none;
+    width: 280px !important;
+    height: 42px;
+    align-content: center;
+    margin: auto;
+    font-size: 18px !important;
+    text-align: center;
+}
+
+#download_response2, #download_response3, #download_response4, #download_response5, #download_response6 {
+    color: white;
+    display: none;
+    width: 280px !important;
+    height: 42px;
+    align-content: center;
+    margin: auto;
+    font-size: 18px !important;
+    text-align: center;
+}
+
 
 /* FEATURES */
 #features {

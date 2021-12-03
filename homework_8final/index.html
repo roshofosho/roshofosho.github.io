@@ -45,11 +45,12 @@
             <div class="row align-items-center g-5">
                 <div class="col-sm-6">
                     <div class="main_left">
-                        <h1 class="display-5 text-center fw-semibold">Make Plans. Easy.</h1>
+                        <h1 class="display-5 text-center fw-semibold" id="main_text">Make Plans. Easy.</h1>
                         <p class="text-center fs-7 mb-4" id="main_description">HeySquad is an iMessage app that makes planning with groups simple and fun</p>
                         <form class="d-flex" id="main_form">
                             <input class="form-control border-secondary me-2 px-3 py-2" type="search" placeholder="Phone number" aria-label="Phone number">
-                            <button class="btn btn-secondary px-4" type="submit">Try Now</button>
+                            <button id="button1" class="btn btn-secondary px-4" type="button" onclick="formResponse(this.id)">Try Now</button>
+                            <p class="text-center" id="download_response1">Download link sent!</p>
                         </form>
                     </div>
                 </div>
@@ -93,28 +94,32 @@
                             <h1 class="display-5 mb-4 fw-semibold text-light">Pick when to party &#128293;</h1>
                             <form class="d-flex form-features w-100">
                                 <input placeholder="Phone number" class="form-control border-secondary me-2 px-3 py-2" type="search" aria-label="Phone number">
-                                <button class="btn btn-dark px-3" type="submit">Try Now</button>
+                                <button id="button2" class="btn btn-secondary px-4" type="button" onclick="formResponse(this.id)">Try Now</button>
+                                <p class="text-center" id="download_response2">Download link sent!</p>
                             </form>
                         </div>
                         <div class="position-absolute top-50 translate-middle-y w-100">
                             <h1 class="display-5 mb-4 fw-semibold text-light">Send your times &#8986;</h1>
                             <form class="d-flex form-features w-100">
                                 <input placeholder="Phone number" class="form-control border-secondary me-2 px-3 py-2" type="search" aria-label="Phone number">
-                                <button class="btn btn-dark px-3" type="submit">Try Now</button>
+                                <button id="button3" class="btn btn-secondary px-4" type="button" onclick="formResponse(this.id)">Try Now</button>
+                                <p class="text-center" id="download_response3">Download link sent!</p>
                             </form>
                         </div>
                         <div class="position-absolute top-50 translate-middle-y w-100">
                             <h1 class="display-5 mb-4 fw-semibold text-light">Everybody votes &#x1f5f3;</h1>
                             <form class="d-flex form-features w-100">
                                 <input placeholder="Phone number" class="form-control border-secondary me-2 px-3 py-2" type="search" aria-label="Phone number">
-                                <button class="btn btn-dark px-3" type="submit">Try Now</button>
+                                <button id="button4" class="btn btn-secondary px-4" type="button" onclick="formResponse(this.id)">Try Now</button>
+                                <p class="text-center" id="download_response4">Download link sent!</p>
                             </form>
                         </div>
                         <div class="position-absolute top-50 translate-middle-y w-100">
                             <h1 class="display-5 mb-4 fw-semibold text-light">Send the invite &#128467;</h1>
                             <form class="d-flex form-features w-100">
                                 <input placeholder="Phone number" class="form-control border-secondary me-2 px-3 py-2" type="search" aria-label="Phone number">
-                                <button class="btn btn-dark px-3" type="submit">Try Now</button>
+                                <button id="button5" class="btn btn-secondary px-4" type="button" onclick="formResponse(this.id)">Try Now</button>
+                                <p class="text-center" id="download_response5">Download link sent!</p>
                             </form>
                         </div>
                     </div>
@@ -135,7 +140,8 @@
     		</div>
     		<form class="d-flex form-send-link w-100 mx-auto" id="main_form">
                 <input class="form-control border-secondary me-2 px-3 py-2" type="Phone number" placeholder="Phone number" aria-label="Search">
-                <button class="btn btn-dark px-4" type="submit">Send Link</button>
+                <button id="button6" class="btn btn-secondary px-4" type="button" onclick="formResponse(this.id)">Try Now</button>
+                <p class="text-center" id="download_response6">Download link sent!</p>
             </form>
     	</div>
     </section>
@@ -146,9 +152,7 @@
     	<div class="container">
     		<div class="d-flex align-items-center justify-content-between flex-wrap gap-3 flex-column flex-sm-row">
     			<a href="#" class="text-light fs-5 text-decoration-none"><span class="fw-bold">HeySquad</span> © 2021</a>
-    			<div class="d-flex gap-3">
-					<a href="#" class="text-light text-decoration-none">Privacy</a>
-					<a href="#" class="text-light text-decoration-none">Terms</a>
+    			<div class="d-flex gap-3">s
 				</div>
 				<div class="d-flex gap-3">
 					<a href="https://www.instagram.com/therealrosho/" target="_blank" class="text-light text-decoration-none">

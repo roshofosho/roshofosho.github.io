@@ -31,3 +31,11 @@ allFeatureLink.forEach((link, idx)=> {
     this.classList.add('active');
   })
 })
+
+function formResponse(id){
+    document.getElementById(id).style.display = 'none';
+    document.getElementById(id).parentNode.getElementsByTagName('input')[0].style.display = 'none';
+    let linkID = id.replace("button", "download_response")
+    console.log(linkID)
+    document.getElementById(linkID).style.display = 'block';
+}
