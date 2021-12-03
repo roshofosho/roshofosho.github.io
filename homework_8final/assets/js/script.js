@@ -1,4 +1,4 @@
-// javscript that creates animation on features section //
+// javscript that creates image and description change animation on features section //
 const allFeatureLink = document.querySelectorAll('.feature-link span:not(.line)');
 const allFeatureText = document.querySelectorAll('.feature-text > div');
 const allImage = Array.from(document.querySelectorAll('.images-feature img'));
@@ -31,6 +31,8 @@ allFeatureLink.forEach((link, idx)=> {
     this.classList.add('active');
   })
 })
+
+// javscript for feedback after try now form submit //
 
 function formResponse(id){
     document.getElementById(id).style.display = 'none';

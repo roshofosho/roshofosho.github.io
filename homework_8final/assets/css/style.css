@@ -1,5 +1,8 @@
+/* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* GOOGLE FONTS */
 
+/* GENERAL */
 * {
     font-family: 'Poppins', sans-serif;
 }
@@ -26,8 +29,7 @@ html {
     overflow-x: hidden;
 }
 
-
-
+/* GENERAL */
 
 
 /* NAVBAR */
@@ -48,7 +50,6 @@ nav {
 
 
 /* MAIN PAGE */
-
 #main_form {
     width: 420px !important;
     align-content: center;
@@ -76,7 +77,6 @@ nav {
     font-size: 18px !important;
     text-align: center;
 }
-
 
 
 /* FEATURES */
@@ -146,14 +146,6 @@ nav {
 #features_section {
     padding-top: 0rem !important;
 }
-@media screen and (min-width: 800px) {
-    .features_container {
-        padding-left: 35.3%;
-    }
-    #features .gap-4 {
-        gap: 15% !important;
-    }
-}
 
 #download_response2, #download_response3, #download_response4, #download_response5 {
     color: white;
@@ -169,10 +161,7 @@ nav {
 /* FEATURES */
 
 
-
-
 /* SEND LINK */
-
 #send-link {
     background-color: #212529;
 }
@@ -197,17 +186,15 @@ nav {
     text-align: center;    
 }
 
-
 /* SEND LINK */
 
 
-
-
 /* FOOTER */
-
 #social_links a {
     font-size: 30px !important;
 }
+
+
 /* BREAKPOINTS */
 @media (min-width: 576px) {
     .form-features {
@@ -221,4 +208,14 @@ nav {
         width: 75% !important;
     }
 }
+
+@media screen and (min-width: 800px) {
+    .features_container {
+        padding-left: 35.3%;
+    }
+    #features .gap-4 {
+        gap: 15% !important;
+    }
+}
+
 /* BREAKPOINTS */
